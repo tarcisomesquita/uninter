@@ -1,0 +1,66 @@
+133359 	Formação Inicial em EAD
+
+133360 	Fundamentos de Desenvolvimento de Softwares
+133361 	Fundamentos de Infraestrutura da Tecnologia da Informação
+
+133362 	Fundamentos de Design de Sistemas
+133363 	Fundamentos da Computação
+
+133368 	Bancos de Dados Relacionais
+133367 	Comunicação Empresarial
+
+133364 	Fundamentos de Sistemas de Informação
+133365 	Lógica de Programação e Algoritmos
+
+133411 	Atividades Extensionistas I
+
+133370 	Análise e Modelagem de Sistemas
+133369 	Engenharia de Software
+
+133371 	Interface Humano Computador
+133373 	Pré-Cálculo
+
+133375 	Visualização de Dados e Storytelling
+133376 	Gerencia de Configuração e Evolução
+
+133372 	Programação Orientada a Objetos
+133379 	Sistema Gerenciador de Banco de Dados
+
+133366 	Engenharia de Requisitos
+133374 	Aplicações Web e Móveis
+133377 	Linguagem de Programação
+133378 	Qualidade de Software
+133380 	Desenvolvimento Web - Front End
+133381 	Teste de Software
+133382 	Desenvolvimento Web - Back End
+133383 	Banco de Dados NoSQL
+133384 	Programação I
+133385 	Design para Dispositivos Móveis
+133386 	Metodologias Ágeis
+133387 	Modelagem de Processos e Negócios
+133388 	Arquitetura de Sistemas
+133389 	Computação em Nuvem
+133390 	Programação II
+133391 	Estimativa e Métricas Software
+133392 	Segurança de Sistemas de Informação
+133393 	Devops e Integração Contínua
+133394 	Programação III
+133395 	Testes de App Móveis
+133396 	Ética Empresarial e Responsabilidade Socioambiental
+133397 	Metodologia de Pesquisa Aplicada
+133398 	Inteligência Artificial
+133399 	Gestão de Projetos
+133400 	Programação IV
+133401 	Estética e Design Aplicado
+133402 	Governança de Sistemas da Informação
+133403 	Gestão de Startups
+133404 	Big Data
+133405 	Estudo das Relações Étnico-Raciais para o ensino da História e Cultura Afro-Brasileira e Africana
+133406 	Internet das Coisas
+133407 	Machine Learning
+133408 	Atividades Complementares
+133409 	Estágio Supervisionado
+133410 	Projeto Final de Curso
+133412 	Atividades Extensionistas II
+133413 	Atividades Extensionistas III
+145269 	Eletiva
