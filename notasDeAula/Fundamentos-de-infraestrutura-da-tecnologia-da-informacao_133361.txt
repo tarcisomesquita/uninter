@@ -1,0 +1,254 @@
+Aula 1
+
+Funções do computador
+Processamento de dados: soma, multiplicação, etc
+Movimentação de dados: de uma entrada para outra
+Armazenamento de dados: RAM e HD
+Controle de dados: rotear dados
+
+registradores
+unidade lógica aritmética
+barramento
+
+Estrutura do compudador
+Figura: barramento interligando CPU, RAM e dispositivos I/O
+Figura: barramento interno ligando ULA, Registradores e Unidade de controle
+
+Cache
+
+Primeiros computadores
+Geração atual foi criada em 1971 com o processador intel 4004 que tinha um processador.
+
+Evolução dos processadores
+1995 pentium, 1,5 MiB cache, 200 MHz
+2006 core duo, 4 MiB cache, 1200 MHz
+2020 i9, 16 MiB, 5200 MHz
+
+Sistema embarcado, microcontroladores
+
+Eficiência: energia, memória, peso, custo, dimensões
+
+Estrutura:
+	processador
+	memória
+	interface humana
+	ADC (conversor analógico para digital), porta para sensores
+	DAC (conversor digital para analógico), porta para atuadores
+
+Raspberry Pi com microcontroladores da ARM
+Placa de celular
+
+Ciclo de instrução
+Interrupção (alguém toca a campainha)
+
+Desafio atual é usar toda a capacidade do processador
+
+o ciclo de instrução é sincronizado com a frequência do clock
+
+editor de texto usa um core
+busca em banco de dados e renderização de imagem usa muitos cores
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 1 pratica
+
+montou um PC, mas não ligou
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 2
+
+Estrutura de interconexão
+
+CPU
+Entra: instruções, dados e endereços
+Sai: endereços, dados e sinais de controle (ela controla as coisas)
+
+RAM
+Entra: endereços, dados, sinal de escrita, sinal de leitura
+Sai: dados
+
+Módulo E/S
+Entra: endereços (dos dispositivos), dados externos, dados internos (do processador), sinal de escrita, sinal de leitura
+Sai: dados externos, dados internos e sinais de interrupção
+
+O barramento é compartilhado (hand shake) versus ponto a ponto (QPI, PCIe)
+
+chipset: ponte norte
+
+periféricos
+precisa de um módulo E/S por que há grande diversidade de dispositivos, velocidades diferentes, estrutura de dados diferentes
+
+o periférico costuma ter um buffer
+
+para o módulo E/S, o periférico envia sinais de controle, de estado e dados.
+
+papel do módulo E/S é fazer o meio de campo entre a alta velocidade e a baixa velocidade.
+
+Técnica de leitura
+programada: processador envia uma mensagem de controle e espera a resposta do dispositivo
+interrupção: processador envia uma mensagem de controle e vai fazer outra coisa
+DMA: processador envia uma mensagem de controle para a memória e vai fazer outra coisa. Quando pronto, DMA avisa o processador.
+
+memórias
+velocidade x custos x capacidade
+
+registradores [< 10 ns], cache L1 [< 40 ns], cache L2 [> 80 ns], memória principal [> 3000 ns], HD [...], fita magnética
+
+memórias mais rápidas usam mais transistores
+
+memórias externas
+          latência   transferência
+SATA HDD   7500 µs   190 MB/s
+SATA SSD    100 µs   560 MB/s
+NVMe M.2      8 µs  3400 MB/s
+*comparou dispositivos da Seagate
+
+
+SO
+otimiza recursos (processador, barramento e E/S)
+
+oferece utilitários e serviços
+
+para controlar a execução, o SO usa Arquitetura do Conjunto de Instruções (ISA)
+
+serviços:
+criação e execução de programas
+acesso a dispositivos
+acesso a arquivos
+acesso ao sistema
+resposta a erros
+contabilização (uso da memória e processador)
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 2 pratica
+
+Hierarquia de memória
+
+cache fault
+tempo de acesso: L1 tem 5 ns, L2 tem 15 ns e RAM tem 100 ns
+razão de falha: L1 tem 10% e L2 tem 20%
+
+Tempo de acesso médio: 5 ns * 100% + 15 ns * 20% + 100 ns * (20% * 10%) = 10 ns
+
+mais variáveis locais que globais gera menor razão de falha e o programa roda mais rápido
+
+
+Redundância
+RAID 0: divide a informação para vários HDs
+RAID 1: metade dos HD são usado para cópia
+RAID 5: insere dados de paridade, que permite a recuperação do dado se UM HD falhar. Requer um HD a mais.
+RAID 10: usa uma RAID 0 antes de uma RAID 1.
+
+bancos costumam preferir usar RAID 5
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 3
+
+sistema operacional: conjunto de programas que estão entre a camada de hardware e os software aplicativos.
+
+Funções do SO:
+  usar mais eficientemente o hardware
+  distribuir recursos
+  fazer abstração de hardware
+
+sistema operacional para o carro, para a geladeira, etc
+
+Classificação dos sistemas de operacionais quanto à:
+	tempo de resposta e à entrada de dados (lote, interativo, tempo real, híbrido)
+	execução de tarefas
+	estrutura do núcleo
+
+customizar: adaptar uma versão linux à minha realidade
+
+concorrência entre programas
+	interrupção (está usando um aplicativo e entra uma ligação)
+	exceção: gerada pelo software
+	controladores (E/S, ponte norte e sul)
+	buffering: gravação em disco, libera memória
+	spooling: buffer de impressão
+	reentrância: quando abre várias abas no navegador, reaproveita a imagem carregada.
+
+Processos tem
+	endereçamento de memória
+	arquivos abertos
+	processos filhos
+	nome
+	PID
+	owner
+	prioridade
+	registradores
+
+Estados de um processo
+	pronto (na fila)
+	execução
+	espera
+
+Thread (trédi)
+  objetivo é performance
+  divisão de um processo
+  usado em multi core
+  vários usuários usando a mesma aplicação (cada tem seus arquivos)
+  mais fácil de gerar que um processo
+  compartilha memória, disco e periféricos
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 3 pratica
+
+SO de PC
+
+interatividade
+suporte à rede
+
+windows, linux, mac os x
+
+cada hardware requer um software
+
+windows predomina no mercado de PC
+android predomina no mercado de smartphone
+
+instalação de SO
+
+midia de instalação
+microsoft media creation tool 2004
+
+dual boot
+
+máquina virtual
+hiper V, da microsoft
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 4
+
+gerência do processador
+algoritmo de escalonamento
+
+política de escalonamento
+caixa rápido em um supermercado
+
+algoritmo preemptivo permite execução em partes
+
+quantum: tempo de CPU
+
+gerência de memória
+sistemas monoprogramáveis: memórica contigua: área de overlay
+sistemas multiprogramáveis: memória particionada
+	particão estática: fragmentação interna
+	particão dinâmica
+
+first-fit: aloca o processo na primeira partição da memória que encontrar e que tenha tamanho disponível
+best-fit
+worst-fit
+
+swaping
+25% do tamanho da RAM por que é lenta
+
+memória virtual
+  cada aplicação tem seus endereços de memória
+  não conhece a memória física, é como se cada aplicação tivesse sua própria memória
+  páginação
+  segmentação
