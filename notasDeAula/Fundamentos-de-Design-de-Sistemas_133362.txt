@@ -1,0 +1,195 @@
+Aula 01
+
+Linux
+
+torvald
+
+software livre não é grátis (para sempre)
+
+open source (pode mudar)
+
+copyleft (mantém a licença que recebeu) ex. GPLv2
+
+SAAS (software as a service)
+
+
+X window system > gerenciador de janelas > ambiente desktop
+
+certificação em linux
+certificação em redes
+
+https://www.lpi.org
+cisco
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 1 prática
+
+instalou ubuntu no vmware
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 2
+
+Estruturas de pastas e terminal de comandos
+
+bin, dev, etc, home, var, run, sbin, lib, media, mnt, opt, proc, tmp
+
+ls, cd, mkdir, rmdir, rm, rm -r, pwd
+
+sudo apt update, apt list pacote, apt search vlc, sudo apt install vlc, sudo apt remove vlc
+sudo dpkg -i pacote
+
+foreground, background, parado
+ps aux, top, jobs, fg, bg, kill
+
+ps -a -o ppid,pid,command
+ps -a -x -o ppid,pid,command | grep 1915
+
+permissões
+rwx
+ls -l, chmod +-
+root
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 2 pratica
+
+whoami, sudo su, touch, nano, cat
+.gzip, .bzip2, .tar
+setas up down
+tab
+
+instalou chrome
+
+chmod
+
+grep, df, find, free
+date, reboot, shutdown
+
+redirecionamento de saida e entrada (><)
+
+pipe |
+sort
+tee
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 3
+
+Git
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 4
+
+Arquitetura de software
+
+ISO/IEC/IEEE 42010:2011
+"Systems and software engineering — Architecture description"
+http://www.iso-architecture.org/42010
+
+software tem tempo de vida
+
+documentação, entendido por todos, fazer manutenção
+
+padrão arquitetural: atende a visão orientada aos negócios
+
+modelo: ajuda na tomada de decisão no projeto: linguagens e tecnologias a serem utilizadas
+
+conhecer o negócio da empresa, os concorrentes e trazer inovação
+
+Estilo estrutural
+-componentes do software: ex.: cadastro de informações e autenticação de usuário
+-mecanismos de interação
+
+vantagens do estilo estrutural
+- atributos de qualidade
+- menos esforço para entender o projeto
+- reuso de arquitetura
+- manutenção
+
+modelo arquitetural
+  - camadas 31:40
+    - apresentação
+    - aplicação
+    - banco de dados
+  - cliente-servidor 34:25
+    - informações enviadas conforme são requisitadas
+  - MVC (modelo, visão, controle)
+  - Microserviços
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 04 prática
+
+Figma
+https://www.figma.com
+login com sed decourt
+ferramenta de desenho
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 05
+
+UX
+The design of everyday things (Don Norman, 1988)
+criou uma necessidade para as pessoas
+entrevista: identificar as experiências e expectativas do usuário
+"como", "por que". Evitar adjetivar "é bom"
+
+protótipo
+  - baixa fidelidade (apenas esboço de caneta: caixa com risco, não tem figura, pouco texto)
+  - média fidelidade (prova de conceito: alguma imagem qualquer, um pouco de cor)
+  - alta fidelidade (cores e imagens reais, roteiro de experimentação)
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 05 pratica: figma
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 06
+
+Um usuário deve saber responder sobre um sinte:
+O que é isto?
+O que eles têm por aqui?
+O que posso fazer aqui?
+Por que devo estar aqui e não em outro site/tela?
+
+Pilares da arquitetura da informação
+  - navegação
+  - busca
+  - organização (lógica)
+  - rótulo (ícones, títulos)
+
+wireframe: representação básica, sem cores
+  foco no conteúdo, estrutura, hierarquia, funcionalidade, comportamento
+
+service blueprint
+ - ações do usuário
+ - ações de frontstage
+ - atividades dos bastidores
+
+linhas de separação
+ - linha de interação
+ - linha de visibilidade
+ - linha de interação
+
+Modelo atômico 27:10
+átomos, moléculas, organismos, templetes, páginas
+
+Design sprint
+dia 1: especialistas: como podemos?
+dia 2: remix, sketch
+dia 3: história sobre como vai acontecer
+dia 4: protótipo de alta fidelidade
+dia 5: teste de usabilidade do protótipo, questionário
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aula 06 prática: figma
+protótipo de média fidelidade
+
+Para fazer os frames, usei o protótipo do tablet iPad mini 8.3, cuja tela tem resolução 744x1133 
+https://www.ifood.com.br/delivery/campinas-sp/marotos-parque-ceasa/70282c55-2be3-4b6b-9c0d-b8431bdc6eb8
