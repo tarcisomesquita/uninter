@@ -26,14 +26,15 @@
 133372 	Programação Orientada a Objetos
 133379 	Sistema Gerenciador de Banco de Dados
 
-133366 	Engenharia de Requisitos
 133374 	Aplicações Web e Móveis
+133383 	Banco de Dados NoSQL
+
+133366 	Engenharia de Requisitos
 133377 	Linguagem de Programação
 133378 	Qualidade de Software
 133380 	Desenvolvimento Web - Front End
 133381 	Teste de Software
 133382 	Desenvolvimento Web - Back End
-133383 	Banco de Dados NoSQL
 133384 	Programação I
 133385 	Design para Dispositivos Móveis
 133386 	Metodologias Ágeis
