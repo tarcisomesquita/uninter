@@ -1,0 +1,64 @@
+https://github.com/N-CPUninter/FUNDAMENTOS-DE-DESENVOLVIMENTO-WEB
+
+A01-P01
+Sumário
+
+A01-P02
+História do link: memex (1945), xanadu (1960)
+
+Tim Bernard Lee, em 1990, desenvolveu o HTML.
+Berners-Lee (citado por Chagas, 2014) afirmava: "Gostei da ideia de que uma informação é realmente definida apenas pelo que está relacionada e como está relacionada. Realmente há pouco mais para o significado. A estrutura é tudo".
+
+Cliente-servidor
+
+Front-end, back-end, full-stack
+
+A01-P03
+Visual Studio Code
+extensões, temas
+
+Live server: permite ver js diretamente no navegador
+
+! para criar estrutura do arquivo
+Ctr+S
+Ctr+Shift+T > open in browser
+
+A01-P04
+HTML
+h1-h6, p, html, head, body, title, hr, br, ul, ol, li,
+
+A01-P05
+<a href="https://...">
+<img src="" alt="acessibilidade" title="mostra" width="">
+table, th,tr, td, border
+
+<a href="#l1"> Item 1</a>
+<h3 id="l1">Item 1</h3>
+
+A01-P06
+form, input type="text|radio|checkbox|select|button|textarea"
+<select> melhor para banco de dados
+action="file.php" method="GET|POST"
+<label for="name">Nome:</label>
+id="unico_js" name="para_php"
+
+A07
+servidor, domínio, registro.br
+https://000webhost.com/
+https://decourt.000webhostapp.com/
+https://files.000webhost.com/
+Nome: database, Usuário: user
+id22096866_database, id22096866_user
+
+criou página no github
+
+A08
+mesclar células: colspan e rowspan
+acessibilidade em tabelas: sumary="descrição", <caption>Descrição</caption>
+
+form, fieldset
+input type submit
+
+
+
+https://warthunder.com/
