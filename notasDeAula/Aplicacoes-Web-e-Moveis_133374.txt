@@ -59,6 +59,24 @@ acessibilidade em tabelas: sumary="descrição", <caption>Descrição</caption>
 form, fieldset
 input type submit
 
+A02-P01
+sumário
+
+A02-P02
+conteúdo: html
+visual: css
+
+seletores: elemento (p), class (.p), id (#p) e universal (*)
+
+style (interno)
+
+externo
+<link rel="stylesheet" href="style.css">
+
+inline (não recomendado)
+<p style="">
+
+A02-P03
 
 
 https://warthunder.com/
