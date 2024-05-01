@@ -1,5 +1,7 @@
 https://github.com/N-CPUninter/FUNDAMENTOS-DE-DESENVOLVIMENTO-WEB
 
+programador recebe um protótipo
+
 A01-P01
 Sumário
 
@@ -77,6 +79,83 @@ inline (não recomendado)
 <p style="">
 
 A02-P03
+/* comentário css*/
+color, backgroud-color
+padding, margin, border, border-radius
+text-align
 
+class="classe1 classe2"
+
+A02-P04
+width
+div
+
+box-sizing: border-box; /* faz caber na tela*/
+
+A02-P05
+float: left | rigth | none | inherit
+
+elementos block: main, div, h[1-6], p, pre, ul, ol, li, table, form, ...
+block: dois seguidos aparecem um abaixo do outro
+
+elementos inline: a, b, i, span, br, img, input, sup, sub, textarea, code, object, 
+inline: dois seguidos aparecem um do lado do outro
+
+A02-P06
+usar lista para fazer menu
+ul, li { display: inline}
+list-style-type: none
+text-decoration: none
+
+position: static | relative | absolute | fixed
+static: posição normal
+relative: posição em relação à posição normal
+absolute: posição em relação a posição do elemento anterior
+
+z-index
+somente para elementos com atributo position
+
+overflow: scroll;
+
+A09
+Fez uma página. Propaganda eletrecista.
+
+<section style="clear: both">
+
+A03-P01
+Sumário
+
+A03-P02
+árvore do documento
+html {head, body}
+body {div}
+div {header,section, footer}
+header {h1..}
+
+<main> não pode ser filho dos elementos <article>, <aside>, <footer>, <header>, ou <nav>.
+Autores não devem incluir mais de um elemento main no mesmo documento
+
+E F
+E + F
+E ~ F
+
+A03-P03
+selector:pseudo-class { color:red}
+
+pseudo-class = :link | :visited | :hover ...
+manter a ordem
+? :hover mudar a cor do fundo para mostrar validação
+
+pseudo-elementos
+::after | ::before | ::first-letter | ::first-line | ::maker | ::selection
+
+
+A03-P04
+
+A03-P05
+
+A03-P06
+
+A10
 
 https://warthunder.com/
