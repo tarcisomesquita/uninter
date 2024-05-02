@@ -135,9 +135,17 @@ header {h1..}
 <main> não pode ser filho dos elementos <article>, <aside>, <footer>, <header>, ou <nav>.
 Autores não devem incluir mais de um elemento main no mesmo documento
 
-E F
-E + F
-E ~ F
+Seletores de tag
+E F = Elemento F descendente do
+elemento E 
+E > F = Elemento F filho do elemento E
+E + F = Elemento F imediatamente após
+E (irmãos) 
+E ~ F = Elemento F após elemento E
+(irmãos)
+E:firstchild = Elemento E primeiro-filho do seu
+elemento-pai
+E:lastchild
 
 A03-P03
 selector:pseudo-class { color:red}
@@ -148,14 +156,125 @@ manter a ordem
 
 pseudo-elementos
 ::after | ::before | ::first-letter | ::first-line | ::maker | ::selection
+Usado para fonte, background
 
+maker: item de lista
+selection: quando selecionar o texto
 
 A03-P04
+Menu vertical
+li, a {display: block}
+
+submenu é uma lista dentro de outra
+position: absolute; display: none
+
+horizontal
+li {float:left}
 
 A03-P05
+dimensionamento: px, porcentagem
+
+variáveis
+<style>
+:root {
+  --dourado: #DEB44B;
+  --branco: #FFFFFF;
+}
+body {
+  background-color: var(--dourado);
+}
+</style>
+
+img {
+  border-radius: 50%;
+  opacity: 0.5;
+  display: block; margin: auto; // centraliza
+}
 
 A03-P06
+transformações 2D
+seletor {transform: translateX(x); translate(x,y);}
+
+rotate(angulo); scaleX(n); skewX(a);
+matrix(scaleX(), scaleY(), skewX(), skewY(), translateX(), translateY() );
+
+exemplo com javascript mudando style tranformação
+
+transition-dalay
+transition-duration
+transition-property
+transition-timing-function
+
+div {
+  width: 100px; height: 100px;
+  transition: width 2s;
+}
+#div1 {transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out}
+div:hover {width: 300px}
+
+achei melhor o ease-in-out
 
 A10
+explicou o ćódigo de uma página sobre leonardo da vince
+
+display: grid
+
+https://color.adobe.com/create/color-wheel
+cor + cor complementar, pois combinam
+ideal é usar uma cor mais uma segundária
+
+A04-P01
+sumario
+
+A04-P02
+Elementos estruturais semânticos
+topo (header), menu (nav), conteúdo, banner, footer
+
+* {box-sizing: border-box;}
+
+A04-P03
+grid
+column, row, gaps
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 50px 80px 200px;
+  grid-template-rows: 80px 100px 100px;
+  gap: 10px;
+}
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-start: 4;
+}
+<div class="container">
+
+...
+
+A04-P04
+Flexbox
+organiza em linha OU coluna
+
+display:flex
+
+A04-P05
+Media query
+
+@media not|only mediatype and (expressions) {
+  css-code;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    bac...
+  }
+}
+
+img com tamanho flexível
+
+
+A04-P06
+
 
 https://warthunder.com/
