@@ -230,6 +230,10 @@ A04-P02
 Elementos estruturais semânticos
 topo (header), menu (nav), conteúdo, banner, footer
 
+<section> é apropriado apenas se o conteúdo do elemento for listado explicitamente na estrutura de tópicos do documento
+<article>: uma postagem em um blog ou um comentário. Um independe do outro.
+<div> como um elemento de último recurso, quando nenhum outro elemento for adequado.
+
 * {box-sizing: border-box;}
 
 A04-P03
