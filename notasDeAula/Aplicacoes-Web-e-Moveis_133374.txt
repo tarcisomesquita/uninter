@@ -276,9 +276,39 @@ Media query
 }
 
 img com tamanho flexível
+<picture>
+<source media="(max-width: 750px)" srcset="imagem1.png">
+<source media="(max-width: 1050px)" srcset="imagem2.png">
+<img src="imagem.png">
+</picture>
 
 
 A04-P06
+img {
+display: block;
+margin: 0, auto;
+max-width: 100%;
+}
+
+.artdirection
+acompanhar a orientação do celular
+
+A05-P01
+sumário
+
+A05-P02
+Javascript
+história
+
+visual stidio code
+extensão live server
+
+A05-P03
+variáveis
+let, var
+
+
+
 
 
 https://warthunder.com/
