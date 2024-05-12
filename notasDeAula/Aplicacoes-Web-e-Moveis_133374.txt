@@ -307,8 +307,68 @@ A05-P03
 variáveis
 let, var
 
+tipos: Boolean, Number, BigInt, String, Undefined, Symbol
 
+str.charAt(6)
+str.slice(0,9) // corta 0-9
+str.splite(' ')
 
+A05-P04
+
+operadores de atribuição =, +=, -=, *=, /=, %=, **=
+operadores relacionais ==, ===, !=, !==, <, <=, >, >=
+operadores lógicos &&, ||, !
+
+alert, confirm e prompt
+
+A05-P05
+if, switch
+
+A05-P06
+for, while, do { } while ()
+
+A06-P01
+sumário
+
+A06-P02
+objetos, new
+
+função construtora
+const carro = {
+  marca: '',
+  preco: 0
+}
+
+const honda = carro;
+honda.marca = 'Honda';
+honda.preco = 244000;
+
+function Carro() {
+  this.marca = '';
+  this.preco = 0;
+}
+
+const honda = new Carro();
+
+for (varialvel in objeto)
+
+A06-P03
+função, return, parametros
+let v = (p1, p2) => p1 + p2;
+
+A06-P04
+window.closed, window.history, window.open(), window.close(), window.onload()
+document
+
+A06-P05
+getElementById()
+getElementByClassName()
+getElementsByTagName()
+
+element.style
+
+A06-P06
+eventos
 
 
 https://warthunder.com/
