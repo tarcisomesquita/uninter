@@ -370,5 +370,12 @@ element.style
 A06-P06
 eventos
 
+A11
+A12
+localStorage.setItem("nome", "João");
+let nome = localStorage.getItem("nome");
+
+substitui o cookie
+
 
 https://warthunder.com/
