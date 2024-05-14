@@ -25,6 +25,17 @@ Manter consistência após operação
 Disponibilidade (manter em operação)
 Tolerância a partições
 
-
-
 A01_P04
+Modelo de dados
+não especifica tipo de variáveis
+
+integridade: no relacional, se um valor é usado, o sistema não deixa excluí-lo.
+
+nosql não evita repetição de dados
+
+relacional requer mais processamento e permite consultas mais complexas
+
+A01_P05
+Modelo de dado agregado
+
+A01_P06
