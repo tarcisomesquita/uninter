@@ -1,0 +1,30 @@
+
+A01_P01
+sumário
+
+A01_P02
+NoSql: chave-valor, documentos, família de colunas, grafos
+
+quando é em tabelas pode ficar várias células com valor null
+
+representaddos em xml, json, bison
+
+noSQL versus relacional: depende do problema que quer resolver
+
+controle de estoque > relacional
+postagens em um fórum > noSQL
+
+A01_P03
+disponibilidade (usa vários servidores, então o sistema não para se uma máquina parar)
+escabilidade:
+  - vertical: aumentar RAM e potência do processador
+  - horizontal: aumentar a quantidade de servidores
+
+Teorema CAP
+Manter consistência após operação
+Disponibilidade (manter em operação)
+Tolerância a partições
+
+
+
+A01_P04
