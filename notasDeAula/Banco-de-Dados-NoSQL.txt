@@ -85,6 +85,8 @@ document type: um array com diferentes scalar type. Aceita array vazio, mas não
 
 A02_P04
 https://aws.amazon.com/pt/console
+criou uma tabela e adicionou um item
+
 
 A02_P05
 
