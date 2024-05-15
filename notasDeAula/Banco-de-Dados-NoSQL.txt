@@ -38,4 +38,57 @@ relacional requer mais processamento e permite consultas mais complexas
 A01_P05
 Modelo de dado agregado
 
+Não há uma definição sobre como os dados são agregados: guardados em um documento ou dividido em vários.
+
 A01_P06
+Distribuição dos dados em vários servidores e consistência
+
+pode fragmentar ou replicar os dados por servidores
+
+fragmentar > exemplo de organizar alfabeticamente os dados em fichários
+replicação: mestre-escravo (apenas leitura), ponto a ponto (todos são mestres e compartilham os dados)
+concorrência: pessimista ou otimista
+
+A02_P01
+sumário
+
+A02_P02
+chava-valor
+
+precisa conhecer a chave para fazer consulta.
+não consegue fazer consulta por valor
+
+DynamoDB> nuvem
+Redis> local
+
+A02_P03
+DynamoDB é da AWS (Amazon Web Services), é orientado a chave-valor e a documentos
+
+custo é por número de acessos
+
+tem time-to-live: quanto tempo um dado será guardado
+
+acesso:
+AWS console
+AWS cli
+AWS SDK
+API
+
+tabela, chave primária, linhas>itens, colunas>atributos
+
+obrigatório um campo como chave primária. Pode ter até 2 campos.
+
+scalar type: string, number, boolen, binary, null
+set type: um array de um scalar typer
+document type: um array com diferentes scalar type. Aceita array vazio, mas não com dados vazio ["", ""], {"nome": ""}
+é como um objeto
+
+A02_P04
+https://aws.amazon.com/pt/console
+
+A02_P05
+
+A02_P06
+
+A07
+DynamoDB e glitch e nodejs
