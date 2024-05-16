@@ -137,14 +137,76 @@ tipos de dados: string, boolean, integer, double, array, null
 www.mongodb.com
 
 A03_P04
+CRUD
+Create Read Update Delete
+insert()  find() update() delete()
 
+use vendas # cria se ainda não existir
+db.getName()
+
+db.coleção.insertOne()   # coleção também é criada automaticamente
+db.coleção.insertMany()
+
+db.clientes.insertOne(
+  {
+    nome: "Alex",
+    endereco: "Rua das avenidas, 288",
+    idade: 18
+  }
+)
+
+db.clientes.find({idade: 18})
+db.clientes.find({idade: {$gt: 18}})
+
+gt, gte, lt, lte
+
+db.coleção.updateOne()
+db.coleção.updateMany()
+
+db.clientes.updateOne({nome: "Alex"}, {$set: {idade: 25}})
+
+db.coleção.deleteOne()
+db.coleção.deleteMany()
+
+db.clientes.deleteMany({idade: 25})
 
 A03_P05
+heartbeat: checagem se os nodos estão funcionando
+
+checa consistência por documento, não por dado
 
 A03_P06
-
+Usos
 
 A04_P01
+Estrutura orientado a colunas
+sumário
 
 A04_P02
+mais complexo que os demais NoSQL
+cada registro possui suas colunas específicas, mas se não tiver o dado, não cria a coluna
 
+tipo de dado semelhante ao modelo relacional
+
+primeiro define a família de colunas, depois as colunas
+
+relação lógica
+
+A04_P03
+
+
+A04_P04
+
+
+A04_P05
+
+
+
+A04_P06
+
+
+
+A05_P01
+
+
+A05_P02
