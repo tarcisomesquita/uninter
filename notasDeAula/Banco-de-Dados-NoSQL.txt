@@ -87,10 +87,26 @@ A02_P04
 https://aws.amazon.com/pt/console
 criou uma tabela e adicionou um item
 
-
 A02_P05
+leitura
+ - EC (eventualmente consistente). Pega dados em um cache. Não é o mais atual.
+ - FC (fortemente consistente). Lê diretamente da tabela. É mais lento
+
+RCU (Read Capacity Unit)
+1 RCU FC = 1 leitura por segundo
+1 RCU EC = 2 leitura por segundo
+
+1 RCU = bloco 4kB
+1 WCU = bloco 1kB
+
+ver quantos bytes tem uma entrada a ser escrita. Não deve passar os 5 WCU provisionados gratuitamente.
+
+escabilidade: pode mudar 4 vezes ao dia
 
 A02_P06
+casos de uso
+situações que não exijam integridade de dados, tenha grande voluma, e alta quantidade de acessos
 
 A07
 DynamoDB e glitch e nodejs
+
