@@ -116,10 +116,25 @@ A03_P01
 sumário
 
 A03_P02
+em nosql não se aplica as regras de normalização
+não tem join em busca
+usa json
 
+em chave-valor, busca pela chave
+em documentos, pode buscar pela chave ou pelo valor
+
+se preocupa mais com a leitura e a apresentação do resultado da busca
+
+no modelo relacional temos atributos (colunas), no nosql temos chaves
+
+modelagem incorporada: um único arquivo
+modelagem referenciada: armazena os dados em vários documentos, há referência de um para outro, menor desempenho em consulta.
 
 A03_P3
+banco de dados tem coleções que tem documentos
+tipos de dados: string, boolean, integer, double, array, null
 
+www.mongodb.com
 
 A03_P04
 
