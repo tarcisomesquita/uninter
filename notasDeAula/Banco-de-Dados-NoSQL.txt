@@ -193,17 +193,59 @@ primeiro define a família de colunas, depois as colunas
 relação lógica
 
 A04_P03
+HBASE
+hbase.apache.org/downloads.html
+feito para linux
 
+configurar JAVA_HOME no arquivo hbase-env.sh
+
+hbase-site.xml
+configurar rootdir
+
+./start-hbase.sh
+
+http://localhost:16010
+
+jps # lista os bancos de dados criados
 
 A04_P04
+CRUD no HBase
 
+./hbase shell
+
+create 'clientes', 'dados_pessoais', 'endereco'
+'clientes' é a tabela
+'dados_pessoais' e 'endereco' são duas famílias de colunas. Cada uma delas pode ter várias colunas
+
+cria colunas no momento da inserção de dados
+
+put 'clientes', '1', 'dados_pessoais:nome', 'Cliente1'
+put 'clientes', '1', 'dados_pessoais:idade', '35'
+put 'clientes', '1', 'dados_pessoais:cidade', 'Curitiba'
+put 'clientes', '1', 'endereco:rua', 'Rua 18'
+'1' é um identificador único
+
+busca:
+scan 'nome_da_tabela'
+get 'nome_da_tabela', 'id_do_registro'
+
+Update
+put 'clientes', '1', 'dados_pessoais:idade', '50'
+
+delete 'clientes', '1', 'dados_pessoais:idade'
+deleteall 'clientes', '1'
+se não colocar o código, apaga todo o banco de dados 'clientes'
 
 A04_P05
+garante a consistência, mas não a disponibilidade numa região
 
+numa região um servidor primário replica os dados
 
+escala linearmente
+mínimo 5 nós
 
 A04_P06
-
+Recomenda uso em logs
 
 
 A05_P01
