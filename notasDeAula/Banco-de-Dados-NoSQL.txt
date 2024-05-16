@@ -110,3 +110,26 @@ situações que não exijam integridade de dados, tenha grande voluma, e alta qu
 A07
 DynamoDB e glitch e nodejs
 
+AWS IAM service: configurar acesso
+
+A03_P01
+sumário
+
+A03_P02
+
+
+A03_P3
+
+
+A03_P04
+
+
+A03_P05
+
+A03_P06
+
+
+A04_P01
+
+A04_P02
+
