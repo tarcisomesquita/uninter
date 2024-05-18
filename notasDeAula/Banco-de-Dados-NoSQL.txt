@@ -247,8 +247,83 @@ mínimo 5 nós
 A04_P06
 Recomenda uso em logs
 
-
 A05_P01
-
+Sumário
 
 A05_P02
+vértices e relacionamentos
+
+não nativos: ex. usa modelagem de um banco de dados relacional
+
+grafo multirelacional
+grafo de propriedades
+
+A05_P03
+Neo4j
+
+https://neo4j.com/download
+
+instalação no windows
+
+tem uma base de dados de exemplo: movie
+
+permite usar apenas uma base de dados por vez
+
+http://localhost:7474
+
+A05_P04
+Cypher
+openCypher
+
+Select * From nome_da_tabela
+Match (n) Return n
+
+Criando vértices
+Create (nome_no)
+Create (nome_no :label)
+Create (Carlos :Pessoa :Pai)
+
+Create (nome_no :label :Sublabel {propriedade:'valor'}) Return nome_no
+Create (n :Pessoa :Pai {nome:'carlos', idade:'35'}) Return n
+
+Criando relacionamentos:
+Match (p :Label), (c :Label)
+Where p.propriedade = 'valor' and c.propriedade = 'valor'
+Create (p) - [r:Relacionamento]-> (c)
+Return p, c, r
+
+Match (p :Irmã), (c :Irmão)
+Where p.nome = 'Julia' and c.nome = 'Mario'
+Create (p) -[r:TemIrmão]-> (c)
+Return p, c, r
+
+Match (n) Where n.idade = '35' Return n
+Match (n :Pai), (y :Mãe) Where n.idade = '35' and n.idade = '32' Return n, y
+
+Match (n) Detach Delete n 
+Match (p :Irmã) -[r :TemIrmão]-> (c :Irmão)
+Where p.nome = 'Julia' and c.nome = 'Mario'
+Delete r
+Return p, c
+
+A05_P05
+garante as propriedades ACID
+NoSQL não garante integridade
+
+A05_P06
+Redes sociais
+Recomendação de compra
+Identificação de padrões químicos
+
+A06_P01
+
+A06_P02
+
+A06_P03
+
+A06_P04
+
+A06_P05
+
+A06_P06
+
