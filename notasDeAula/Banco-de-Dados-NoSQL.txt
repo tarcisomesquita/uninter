@@ -316,14 +316,53 @@ Recomendação de compra
 Identificação de padrões químicos
 
 A06_P01
+Sumário
 
 A06_P02
+Migração de esquema
+
+Banco de dados NoSQL não é totalmente livre de esquema
+
+Verificar quais consultas requerem NoSQL e migrar apenas as tabelas necessárias
 
 A06_P03
+Persistência poliglota
+
+O banco de dados ter vários tipos de estrutura
+
+Analogia com uma caixa de ferramenta
 
 A06_P04
+NoSQL é uma tecnologia de armazenamento de dados
+
+Banco de dados XML
+
+Banco de dados de objeto (POO)
+
+Elasticsearch. Peso para as palavras. Gera recomendação
+
+openCypher
+
+Datomic. Armazena o histórico de armazenamentos. Usado em data warehouse
+
+Spark. Motor para gerenciar fluxo
+
+PostgreSQL: relacional que suporta características NoSQL
+Redis: NoSQL do tipo chave-valor
+
+Memcached
 
 A06_P05
+newSQL: é relacional, mas com desempenho NoSQL
+tem as propriedades ACID (Acessibilidade, Consistência, Integridade e Disponibilidade)
+
+aplicativos de banco e mercado financeiro
 
 A06_P06
+Como escolher um banco de dados
+-produtividade do programador
+-recursos (tem dinheiro disponível)
 
+desenvolver protótipos que atendem algumas funcionalidades do software para testar o esquema do banco de dados
+testar cenários que dependam de desempenho
+testar como o sistema responde em situações para quais ele não foi programado
