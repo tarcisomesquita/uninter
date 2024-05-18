@@ -9,7 +9,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-	    
+      /* Estilo geral */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        
+        font-family: Arial, sans-serif;
+      }
+
+      li {
+        line-height: 30px;
+      }
+
+
+      /* Menu */
+      nav {
+        position: fixed; /* Fixar o cabeçalho no topo */
+        top: 0px;          /* Posição inicial do cabeçalho */
+        
+        background-color: #ffffff;
+        padding: 15px 0;
+        width: 100%; /* O cabeçalho ocupa toda a largura da tela */
+        
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        margin: 0px;
+        padding: 0px;
+        
+        list-style: none;
+        text-align: center;
+      }
+
+      nav li {
+        margin: 0px 15px;
+        display: inline-block;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333333;
+        font-weight: bold;
+      }
+
+
+      /* Cabeçalho */
+      header {
+        margin-top: 80px;
+        padding: 20px 0;
+        
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        
+        background-color: #3f51b5;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0px;
+      }
+
+      header img {
+        width: 150px;
+        height: auto;
+        
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+
+      /* Seções principais */
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-top: 30px;
+        padding: 20px;
+        padding-top: 50px;
+        
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        margin-bottom: 20px;
+        
+        color: #333;
+        font-size: 24px;
+      }
+
+      section a:link    {color:#2160DE; text-decoration:none;}      /* unvisited link  */
+      section a:visited {color:#2160DE; text-decoration:none;}      /* visited link    */
+      section a:hover   {color:#2160DE; text-decoration:underline;} /* mouse over link */
+      section a:active  {color:#2160DE; text-decoration:underline;} /* selected link   */
+
+
+      /* Cores de fundo das seções */
+      #sobreMim {
+        background-color: #e6f2ff; /* Azul claro */
+      }
+
+      #formacao {
+        background-color: #f7f7f7; /* Cinza claro */
+      }
+
+      #portfolio {
+        background-color: #ffffff; /* Branco */
+      }
+
+      #contato {
+        background-color: #f2f2f2; /* Cinza claro */
+      }
+
+
+      /* Tabelas */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f0f0f0;
+      }
+
+      /* Cores das linhas das tabelas (alternando) */
+      tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+
+      /* Formulário de contato */
+      form {
+        margin: 0 auto;
+        padding-right: 20px;
+        
+        max-width: 500px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"], textarea {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        
+        padding: 8px;
+        
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        border: none;
+        border-radius: 4px;
+        
+        padding: 10px 20px;
+        
+        background-color: #3f51b5;
+        color: #fff;
+        cursor: pointer;
+      }
+
+
+      /* Rodapé */
+      footer {
+        margin-top: 100px;
+        padding: 10px;
+        
+        background-color: #3f51b5;
+        color: #fff;
+        text-align: center;
+      }
+
+      footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        nav ul {
+          text-align: left;
+        }
+
+        nav li {
+          margin: 0px 10px;
+        }
+
+        section {
+          padding: 15px;
+          padding-top: 60px;
+       }
+
+        form {
+          max-width: 100%;
+        }
+      }
     </style>
   </head>
   
@@ -36,7 +249,7 @@
       <ul>
         <li><a href="#sobreMim">Sobre mim</a></li>
         <li><a href="#formacao">Formação</a></li>
-        <li><a href="#portifolio">Portfólio</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -47,79 +260,111 @@
     </header>
     
     <main>
-      <article id="sobreMim">
-        <h2>Sobre mim</h2>
-	
-	<p>Sou uma pessoa que gosta de informática e estou tentando ganhar mais conhecimento prático sobre o cotidiano no mercado de trabalho.</p>
-	<p>Procuro oportunidades para desenvolver trabalhos em meu tempo livre, pois já tenho um emprego fixo como professor de Física no Ensino Médio.</p>
-	<p>Gosto de atuar no lado do servidor e com processamento de dados. Interesso por formatos de arquivos e me inspira muito a ideia da web semântica.</p>
-	<p>No meu cotidiano uso distros linux que são lightweight.</p>
-	<p>Desenvolver ferramentas que ajudem as pessoas, esse é minha meta!</p>
-      </article>
-      
-      <article id="formacao">
+      <section id="sobreMim">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor web em formação e professor de física experiente, buscando aprimorar minhas habilidades e contribuir para projetos inovadores.</p>
+        <p>Apaixonado por tecnologia, procuro oportunidades para aplicar meus conhecimentos em meu tempo livre, além de me dedicar ao aprendizado contínuo.</p>
+        <p>Tenho interesse em desenvolvimento back-end, processamento de dados e web semântica. Utilizo distros Linux leves no meu dia a dia.</p>
+        <p>Meu objetivo é desenvolver ferramentas que auxiliem as pessoas e impactem positivamente a sociedade.</p>
+      </section>
+        
+      <section id="formacao">
         <h2>Formação</h2>
-        <h2>Línguas</h2>
-	      
-	<pre>
-EDUCATION
-Software Engineer
-Centro Universitário Internacional - UNINTER
-01/2023 - 12/2026, Degree in Biology
-Claretiano
-01/2022 - 12/2022, Master's degree in Physics
-Universidade Estadual de Campinas - UNICAMP
-01/2003 - 12/2004, Degree in Physics
-Universidade Estadual Paulista - UNESP
-01/1999 - 12/2002,
-WORK EXPERIENCE
-High school teacher
-Estado de São Paulo
-08/2004 - 08/2023,
-SKILLS
-Linux C Java Script Google Script
-Google Sheets Back End HTML
-Project Management Teamwork Public Speaking
-LANGUAGES
-English
-Limited Working Proficiency
-Portugues
-Native or Bilingual Proficiency
-Spanish
-Elementary Proficiency
-		<pre>
-      </article>
+
+        <h3>Educação</h3>
+        <table>
+          <tr>
+            <th>Instituição</th>
+            <th>Curso</th>
+            <th>Período</th>
+          </tr>
+          <tr>
+            <td>Centro Universitário Internacional - UNINTER</td>
+            <td>Engenharia de Software</td>
+            <td>2023 - Presente</td>
+          </tr>
+          <tr>
+            <td>Claretiano</td>
+            <td>Graduação em Ciências Biológicas</td>
+            <td>2022 - 2022</td>
+          </tr>
+          <tr>
+            <td>Universidade Estadual de Campinas - UNICAMP</td>
+            <td>Mestrado em Física</td>
+            <td>2003 - 2004</td>
+          </tr>
+          <tr>
+            <td>Universidade Estadual Paulista - UNESP</td>
+            <td>Graduação em Física</td>
+            <td>1999 - 2002</td>
+          </tr>
+        </table>
+
+        <h3>Experiência Profissional</h3>
+        <table>
+          <tr>
+            <th>Cargo</th>
+            <th>Empresa</th>
+            <th>Período</th>
+          </tr>
+          <tr>
+            <td>Professor de Física</td>
+            <td>Estado de São Paulo</td>
+            <td>2004 - Presente</td>
+          </tr>
+        </table>
+
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Linguagens de Programação: C, JavaScript, Google Script, Python, Java, Assembly</li>
+          <li>Ferramentas: Google Sheets, HTML, CSS</li>
+          <li>Outras Habilidades: Gerenciamento de Projetos, Trabalho em Equipe, Comunicação</li>
+        </ul>
+
+        <h3>Idiomas</h3>
+        <ul>
+          <li>Inglês: Proficiência Intermediária</li>
+          <li>Português: Nativo</li>
+          <li>Espanhol: Noções Básicas</li>
+        </ul>
+      </section>
       
-      <article id="portifolio">
+      <section id="portfolio">
         <h2>Portfólio</h2>
-      </article>
+        <p>Aqui estão alguns exemplos de coisas em que já trabalhei.</p>
+        <ul>
+          <li><a href="https://github.com/tarcisomesquita" target="_blank">Meu Github</a></li>
+          <li><a href="https://bit.ly/tarcisomesquita" target="_blank">Meu Google Drive</a></li>
+          <li><a href="https://is.gd/_t_m_" target="_blank">Meus links</a></li>
+        </ul>
+      </section>
       
-      <article id="contato">
+      <section id="contato">
         <h2>Contato</h2>
         <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSca-zOfIXdDt2HN2vgdjIzYiRRniSI7xamqvobjxRWvm6-Keg/formResponse" target="blank" autocomplete="on">
           <label for="nome">Nome:</label><br>
           <input type="text" id="nome" name="entry.1638461727" maxlength="100" required>
           
-					<br><br>
-					
+          <br><br>
+          
           <label for="email">Email:</label><br>
           <input type="text" id="email" name="entry.615106623" maxlength="100" pattern="^[a-z0-9_.\-]+@[a-z0-9\-]+(\.[a-z0-9\-]+)+$" title="Digite um email válido" required>
-					
+          
           <input type="hidden" id="device" name="entry.884902982">
-					<script>device.value = `${screen.width}x${screen.height};${navigator.deviceMemory}GiB;${navigator.userAgent.replace(/;/g,',')};${document.referrer}`;</script>
-					
+          <script>device.value = `${screen.width}x${screen.height};${navigator.deviceMemory}GiB;${navigator.userAgent.replace(/;/g,',')};${document.referrer}`;</script>
+          
           <br><br>
-					
+          
           <label for="mensagem">Mensagem:</label><br>
-					<textarea id="mensagem" name="entry.1100370548" rows="10" cols="50" maxlength="2000" required></textarea>
-					
+          <textarea id="mensagem" name="entry.1100370548" rows="10" cols="50" maxlength="2000" required></textarea>
+          
           <br><br>
-					
+          
           <button type="submit">Enviar</button>
-					
+          
           <br><br>
         </form>
-      </article>
+      </section>
     </main>
     
     <footer style='font-family:"sans-serif"; font-size:10px;'>
