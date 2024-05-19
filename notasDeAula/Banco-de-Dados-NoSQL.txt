@@ -283,6 +283,9 @@ Create (nome_no)
 Create (nome_no :label)
 Create (Carlos :Pessoa :Pai)
 
+CREATE (:User { name: "@jeff" })-[:FOLLOWS]->(:User { name: "@neo" })
+https://www.youtube.com/watch?v=T6L9EoBy8Zk
+
 Create (nome_no :label :Sublabel {propriedade:'valor'}) Return nome_no
 Create (n :Pessoa :Pai {nome:'carlos', idade:'35'}) Return n
 
@@ -366,3 +369,86 @@ Como escolher um banco de dados
 desenvolver protótipos que atendem algumas funcionalidades do software para testar o esquema do banco de dados
 testar cenários que dependam de desempenho
 testar como o sistema responde em situações para quais ele não foi programado
+
+A09B
+https://neo4j.com/docs/apoc/5/import/load-json/
+
+A10B
+
+
+
+ = = =
+
+neo4j tem nodes, relationships, and properties
+
+WITH 2 AS n
+RETURN n
+
+MATCH (n)
+WITH n
+ORDER BY n.name DESC
+LIMIT 3
+RETURN collect(n.name)
+
+WITH [2, 3] AS n
+FOREACH (i IN n | i^3)
+
+RETURN 2 AS n
+RETURN [2, 3] AS n
+RETURN [0, "hello", 3.14, null] AS list
+RETURN range(0, 10) AS n
+RETURN range(0, 10)[3] AS n
+RETURN [x IN [2, 3]] AS n
+RETURN [x IN [2, 3] | x^3 ] AS n
+RETURN [x IN range(0,10) | x^3 ] AS n
+RETURN [x IN range(0,10) WHERE x % 2 = 0 ] AS n
+RETURN [x IN ["José Silva", "Maria Vieira"] WHERE x contains 'Silva'] AS nome
+
+UNWIND [1, 2, 3, null] AS x
+RETURN x, 'val' AS y
+
+UNWIND [] AS empty
+RETURN 'literal_that_is_not_returned'
+
+WITH [] AS list
+UNWIND
+  CASE
+    WHEN list = [] THEN [null]
+    ELSE list
+  END AS emptylist
+RETURN emptylist
+
+WITH [1, 1, 2, 2] AS coll
+UNWIND coll AS x
+WITH DISTINCT x
+RETURN collect(x) AS setOfVals
+
+WITH [[1, 2], [3, 4], 5] AS nested
+UNWIND nested AS x
+UNWIND x AS y
+RETURN y
+
+UNWIND [0, 1, 2] AS x
+CALL {
+  WITH x
+  RETURN x * 10 AS y
+}
+RETURN x, y
+
+UNWIND [1, 2, 3, 4, 5, 6] AS x
+WITH x
+LIMIT 5
+WHERE x > 2
+RETURN x
+
+MATCH (n)
+RETURN n
+LIMIT 10
+
+match (p:Customer) return p
+match (p:Customer {contactName:"Pedro Afonso"}) return p
+
+MATCH (person)-[r]->(otherPerson)
+WITH *, type(r) AS connectionType
+RETURN person.name, otherPerson.name, connectionType
+
