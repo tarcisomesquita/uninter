@@ -303,7 +303,9 @@ Return p, c, r
 Match (n) Where n.idade = '35' Return n
 Match (n :Pai), (y :Mãe) Where n.idade = '35' and n.idade = '32' Return n, y
 
-Match (n) Detach Delete n 
+Match (n)
+Detach Delete n
+
 Match (p :Irmã) -[r :TemIrmão]-> (c :Irmão)
 Where p.nome = 'Julia' and c.nome = 'Mario'
 Delete r
@@ -452,3 +454,29 @@ MATCH (person)-[r]->(otherPerson)
 WITH *, type(r) AS connectionType
 RETURN person.name, otherPerson.name, connectionType
 
+
+ver todos os nós e relações
+MATCH (n)
+OPTIONAL MATCH p=(n)--()
+RETURN p, n
+
+
+CALL apoc.load.json("file:///person.json")
+YIELD value
+MERGE (p:Person {name: value.name})
+SET p.age = value.age
+WITH p, value
+UNWIND value.children AS child
+MERGE (c:Person {name: child})
+MERGE (c)-[:CHILD_OF]->(p);
+
+CALL apoc.load.directory('*.csv', 'path/to/directory')
+YIELD value WITH value as url ORDER BY url DESC
+CALL apoc.load.csv(url, {results:['map']}) YIELD map RETURN map
+
+WITH [1, 2, 3] AS t
+FOREACH (n IN t | CREATE (p :Teste {id:n}))
+
+MATCH p=(start)-[*]->(finish)
+WHERE start.name = 'A' AND finish.name = 'D'
+FOREACH (n IN nodes(p) | SET n.marked = true)
