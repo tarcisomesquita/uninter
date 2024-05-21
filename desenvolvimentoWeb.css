@@ -1,0 +1,214 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+  font-family: Arial, sans-serif;
+}
+
+li {
+  line-height: 30px;
+}
+
+
+/* Menu */
+nav {
+  position: fixed; /* Fixar o cabeçalho no topo */
+  top: 0px;          /* Posição inicial do cabeçalho */
+  
+  background-color: #ffffff;
+  padding: 15px 0;
+  width: 100%; /* O cabeçalho ocupa toda a largura da tela */
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  margin: 0px 15px;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+/* Cabeçalho */
+header {
+  margin-top: 80px;
+  padding: 20px 0;
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  background-color: #3f51b5;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0px;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+/* Seções principais */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-top: 30px;
+  padding: 20px;
+  padding-top: 50px;
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  
+  color: #333;
+  font-size: 24px;
+}
+
+section a:link    {color:#2160DE; text-decoration:none;}      /* unvisited link  */
+section a:visited {color:#2160DE; text-decoration:none;}      /* visited link    */
+section a:hover   {color:#2160DE; text-decoration:underline;} /* mouse over link */
+section a:active  {color:#2160DE; text-decoration:underline;} /* selected link   */
+
+
+/* Cores de fundo das seções */
+#sobreMim {
+  background-color: #e6f2ff; /* Azul claro */
+}
+
+#formacao {
+  background-color: #f7f7f7; /* Cinza claro */
+}
+
+#portfolio {
+  background-color: #ffffff; /* Branco */
+}
+
+#contato {
+  background-color: #f2f2f2; /* Cinza claro */
+}
+
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* Cores das linhas das tabelas (alternando) */
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+/* Formulário de contato */
+form {
+  margin: 0 auto;
+  padding-right: 20px;
+  
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+  padding: 8px;
+  
+  width: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 4px;
+  
+  padding: 10px 20px;
+  
+  background-color: #3f51b5;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Rodapé */
+footer {
+  margin-top: 100px;
+  padding: 10px;
+  
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    text-align: left;
+  }
+
+  nav li {
+    margin: 0px 10px;
+  }
+
+  section {
+    padding: 15px;
+    padding-top: 60px;
+ }
+
+  form {
+    max-width: 100%;
+  }
+}
