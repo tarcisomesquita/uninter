@@ -47,10 +47,6 @@ id="unico_js" name="para_php"
 A07
 servidor, domínio, registro.br
 https://000webhost.com/
-https://decourt.000webhostapp.com/
-https://files.000webhost.com/
-Nome: database, Usuário: user
-id22096866_database, id22096866_user
 
 criou página no github
 
