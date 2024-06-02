@@ -106,6 +106,8 @@ escabilidade: pode mudar 4 vezes ao dia
 A02_P06
 casos de uso
 situações que não exijam integridade de dados, tenha grande voluma, e alta quantidade de acessos
+-carrinho de compras em site eletrônico
+-aplicativos orientados por sessão: armazenar dados por vez que fez login.
 
 A07
 DynamoDB e glitch e nodejs
@@ -177,6 +179,12 @@ checa consistência por documento, não por dado
 
 A03_P06
 Usos
+- armazenamento de páginas da web
+- catálogo de documentos de uma empresa
+- inventário de um e-commerce
+- blogs
+- plataformas de vídeo
+- respostas em um fórum
 
 A04_P01
 Estrutura orientado a colunas
@@ -245,7 +253,9 @@ escala linearmente
 mínimo 5 nós
 
 A04_P06
-Recomenda uso em logs
+Recomenda uso em:
+- logs
+- preferências do usuário em uma rede social
 
 A05_P01
 Sumário
