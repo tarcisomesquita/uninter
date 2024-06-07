@@ -1,0 +1,372 @@
+A01-P1
+Organização da disciplina
+- Design de sistemas interativos - conceito e definições
+- Design de sistemas interativos centrado no humano
+- Entendimento
+- Design para experiência
+- Avaliação
+- Acessibilidade e usabilidade
+
+Organização da primeira aula
+- Conceitos e definições de design de sistemas interativos
+- Importância de focar o design no ser humano
+- Antecedentes históricos da interação humano-computador (IHC), evolução
+- Habilidades e conhecimentos do(a) designer de sistemas interativos
+- Segurança, ética e sustentabilidade
+
+A01-P2
+"A interação é o processo de comunicação entre pessoas e sistemas interativos" (Preece et al., 2013)
+
+Tabela 1 – Comparação das perspectivas de interação
+Perspectiva   Significado de interação    Fatores de qualidade mais evidentes
+Sistema       Transmissão de dados        Eficiência (indicado pelo tempo de uso e número de erros)
+Parceiro      Conversa usuário-sistema    Adequação da interpretação e geração de textos
+Ferramenta    Manipulação de ferramenta   Funcionalidades relevantes ao usuário, facilidade de uso
+Mídia         Comunicação entre usuários  Qualidade da comunicação mediada e entendimento mútuo
+Fonte: Elaborada com base em Barbosa (2021)
+
+A01-P3
+golfo de execução
+golfo de avaliação
+
+PACT (pessoas, atividades, contexto, tecnologia)
+
+interface física
+interface com pessoas
+
+device (artefato cognitivo)
+
+muitos usuários acreditam que o sistema é a interface com a qual fazem contato (smartphone é o whatsapp)
+
+A01-P04
+
+Shuterland: um visor tridimensional sobre a cabeça
+realidade virtual
+
+A01-P05
+stakeholder
+
+A01-P06
+Acessibilidade: pessoas que não tem as mesmas habilidades que nós, que não tem os mesmos recursos financeiros.
+
+Segurança: usina nuclear, carro autônomo.
+
+A07
+Faça um resumo da IHC centrada no humano
+
+A02-P01
+sistemas interativos
+
+A02-P02
+design: processo criativo
+
+A02-P03
+entendimento: sistemas encaixarem no outro, serem interoperantes
+
+design conceitual
+design físico: operacional, representacional, interação
+
+terminar com uma avaliação
+
+A02-P04
+implementação
+
+bases de dados, programação
+
+A02-P05
+persona: usuário, avatar
+cenário: display do carro: mapa, escolher rádio
+
+não desenvolvemos apenas para nós
+
+A02-P06
+modelo conceitual: principais objetos, atributos e relação entre eles
+
+A08
+balsamiq mockup
+
+Ferramentas para fazer protótipo de página da web
+https://wireflow.co/
+https://mydraft.cc
+https://mockitt.wondershare.com/
+https://jdittrich.github.io/quickMockup/
+https://alternativapara.com.br/s/balsamiq-mockups?page=4
+
+
+A03-P01
+
+PACT (pessoas, atividades, contexto, tecnologia)
+
+A03-P02
+
+desenvolvemos sistemas que server para auxiliar as pessoas
+
+conhecer as soluções
+
+A03-P03
+mais importante
+PACT (pessoas, atividades, contexto, tecnologia)
+
+entender o usuário
+
+quais atividades a pessoa faz
+
+Lei de Fitts: tempo gasto para mover o mouse. 15 cm > 0,2 s
+
+A03-P04
+requisitos
+
+A03-P05
+templetes de requisitos
+
+MoSCoW
+Must have
+Should have
+Could have
+Won't have
+
+A03-P06
+Questionários para avaliar o sistema interativo
+
+A09
+Avaliação
+
+Poirot
+teste de usabilidade e comunicabilidade
+
+teste deve ser feito por terceiro (nem design, nem usuário)
+
+A04-P01
+
+design para uma experiência excelente
+
+- experiência e tecnologias
+- experiência envolvente
+- emoção e design - design para o prazer
+- estética do design
+- design de serviço
+
+A04-P02
+
+UX - User EXperience
+
+brincar não é seguir regras, é nos deixar livres
+
+A04-P03
+
+Envolvimento
+se identificar como produto
+adaptividade: quanto a tecnologia se adapta ao usuário
+narrativa
+imersão: captar a atenção do usuário e faze-lo sentir imerso
+fluxo
+
+A04-P04
+design para o prazer
+sensação de bem estar: fisioprazer, socioprazer, psicoprazer, ideoprazer
+psicoprazer: eu consegui!
+ideoprazer: independência, liberdade, criatividade
+
+A04-P05
+
+estética: percepção da beleza. Depende de cada um, depende do momento na história
+
+premo: 14 emoções
+7 positivas   7 negativas
+inspiração    indignação
+desejo        repugnância
+satisfação    insastifação
+agradável     desagradável
+fascinação    desapontamento
+divertimento  tédio
+admiração     desprezo
+
+pleasant surprise    unpleasant surprise
+satisfaction         dissatisfaction
+admiration           contempt
+desire               disgust
+amusement            boredom
+fascination          disappointment
+inspiration          indignation
+
+filme explora as positivas e negativas, e tem público para ambos.
+
+A04-P06
+
+design de serviços
+ato da entrega
+
+cloudsourcing
+
+entregar o que foi propagandeado
+
+o cliente ter as expectativas atingidas
+
+um like tem mais valor que uma propaganda boca a boca
+
+A10
+
+PrEMO (Product Emotion Measurement Tool)
+
+08:23 imagem de emoções positivas e negativas
+
+captura a imagem do usuário e detecta emoção pela expressão facial
+
+https://premotool.com
+tem vídeo mostrando as emoções
+como o usuário se sente
+
+pessoa fazendo uma atividade crítica estará sério o tempo todo
+
+é uma avaliação do usuário
+
+velocidade de acesso é uma das grandes insatisfações
+
+um prazer pode justificar se submeter a uma emoção ruim
+
+
+A05-P01
+Avaliação
+
+A05-P02
+feedback do usuário
+
+especialista
+recrutar participantes para usar uma versão antecipada
+
+protótipo vertical: não precisa ter todas as funções funcionando
+
+A05-P03
+avaliação por especialista em design ou usabilidade
+regras, leis
+não prevê uma sequência errada de ações do usuário
+
+princípios de usabilidade:
+- aprendabilidade (visibilidade, consistência, familiaridade, e affordance)
+- efetividade (navegação, controle, retorno, recuperação, restrição)
+- acomodação (flexibilidade, estilo, sociabilidade)
+
+que o usuário consiga usar sem precisar de um treinamento
+
+avaliação é um processo constante
+
+A05-P04
+avaliação baseada no participante
+
+usa técnicas, como a do espelho fake, para observar o comportamento do usuário
+
+codescoberta
+pessoas em pares descobrindo como fazer a tarefa
+
+living labs: usuário ajuda a desenvolver design
+experimento controlado: comparar designs
+
+A05-P05
+Avaliação na prática
+
+use case, exemplo
+
+dificuldade: definir parâmetros: quantos por cento significam bom ou ruim.
+ter uma métrica relevante
+
+A05-P06
+
+fazer uma avaliação piloto.
+
+eye tracking
+tempo de interação com uma tela ou função
+
+quais regiões da tela são mais usadas
+
+Presença
+sensação de estar lá
+
+medir o interesse da pessoa
+
+A11
+usabilidade em dispositivos móveis
+
+testar seu site para as duas plataformas: android e iOS
+
+ferramenta gratuíta
+MobileTest
+
+pequeno demais é ruim
+cor do botão não facilita
+
+https://mobiletest.me/
+
+
+A06-P01
+Acessibilidade
+
+A06-P02
+
+Bom design: acessibilidade, usabilidade, aceitabilidade
+acessibilidade: remoção de barreira para algumas pessoas
+usabilidade: tempo gasto na tarefa, quantidade de erros cometidos, tempo para aprender a usar
+aceitabilidade: adequação ao propósito, gosto
+
+
+A06-P03
+Acessibilidade
+
+social, intelectual, estrutura
+
+uso simples e intuitivo: poucas funções
+
+princípios do design universal
+
+A06-P04
+Usabilidade
+
+eficiência (mínimo esforço), eficácia (organizado), facilidade (aprendizagem), segurança, alta utilidade
+
+tomamos consciência do uso quando algo dá errado
+
+A06-P05
+Aceitabilidade
+
+depende da personalidade do usuário
+
+não tem como prever
+
+facilidade, funções, conveniência
+
+A06-P06
+design de alto nível de desenvolvimento
+
+não espere que as pessoas guardem muita coisa na memória
+
+princípios: capacidade de aprendizagem, efetifidade, adaptatividade
+
+tornar as coisas visíveis
+
+affordance (propiciar). É claro para quê servem, não precisa explicar
+
+retorno para que as pessoas percebam o efeito de suas ações
+
+recuperação: conseguir se livrar de enganos
+
+estilo: design atraente
+
+restrições: impedir que as pessoas cometam erro. Confirmação para ações perigosas
+
+flexibilidade
+
+A12
+
+Validação da acessibilidade
+
+acessibilidade: quando algo não funciona na página
+ataque DDOS
+
+validador do site
+
+estatuto da pessoa com deficiência: lei 13.146 de 6 de julho de 2015
+
+desenvolvemos sistemas para todas as pessoas
+
+traduzir a página > acessibilidade
+
+https://validador.w3.org
