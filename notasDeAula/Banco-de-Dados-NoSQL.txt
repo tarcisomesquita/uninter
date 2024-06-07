@@ -3,7 +3,7 @@ A01_P01
 sumário
 
 A01_P02
-NoSql: chave-valor, documentos, família de colunas, grafos
+Estruturas de banco de dados NoSql: armazenamento em chave-valor, armazenamento em documentos, família de colunas, orientado a grafos
 
 quando é em tabelas pode ficar várias células com valor null
 
