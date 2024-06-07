@@ -1,0 +1,507 @@
+Um banco de dados é um conjunto de arquivos. Por exemplo, pode ser só um arquivo csv.
+
+Aula 1
+
+dado x informção
+SGBD: mysql, oracle, SQL server
+
+controle de redundância: dados não repetidos
+Concorrência: vários usuários simultaneamente
+Controle de acesso
+
+Restrição de integridade: não remover se houver dependência
+backup
+
+Administrador do banco de dados
+
+Modelagem de Dados
+- conceitual: conversa com o cliente, esboço
+- lógico: SGBD
+- físico: tabelas, banco de dados no servidor
+
+MER: Modelo Entidade Relacionamento
+Entidade: objeto do mundo real: aluno
+Campo: característica de uma entidade: nome, data de nascimento
+Relacionamento: ligação à outra entidade: aluno reside cidade
+
+Entidade fraca: Funcionário Dependentes 2: pode remover Dependendes 2
+Entidade associativa: Conta Usuário Nome: um usuário pode ter mais de uma conta
+
+Instância de entidade (registros): conjunto de campos
+Pessoa: nome, cpf, endereço
+
+tipos de campos: mono valorado, multivalorado, etc
+
+Domínio: número, data, etc
+
+Chaves de um campo
+chave primária (comum usar cpf ou email)
+
+especialização: campos diferentes para usuário pessoa física ou pessoa jurídica
+
+cardinalidade
+(1:1) pode ter apenas um conjuge (pessoa possui(1:1) conjuge)
+(1:n) 
+(n:1) cliente reside(n:1) cidade : chave estrangeira (FK) fica do lado n, portanto cliente recebe o código da cidade.
+(n:n) cliente possui(n:n) conta. Cria uma nova entidade que guarda as duas chaves primárias
+      conta contem(1:n) contacliente possui(n:1) cliente
+não pode haver (n:n) no banco de dados
+
+cardinalidade mínima e máxima, valores mínimo e máximo de n
+
+
+Aula 1 prática:
+Exemplo de rede de restaurantes
+usando powerpoint:
+  definiu as entidades
+  definiu os atributos (campos) das entidades
+  definiu relações
+
+
+Aula 2:
+Modelo lógico ou relacional (tabelas)
+
+terminologia (conceitual, lógica, sql)
+(entidade, relação, tabela)
+(campo, atributo, coluna)
+(registro, tupla, linha)
+
+álgebra relacional
+
+restrições de integridade 8:04
+1FN, 2FN, 3FN
+
+modelo físico 21:45
+create table cidade (
+codigo integer,
+descricao varchar(100),
+uf char(02) );
+
+DBDesigner gera automaticamente
+
+CREATE TABLE cidade (
+id INTEGER NOT NULL AUTO_INCREMENT,
+estado_id INTEGER NOT NULL,
+descricao VARCHAR(100) NULL,
+uf CHAR(02),
+PRIMARY KEY(id),
+FOREIGN KEY(estado_id) REFERENCES estado(id)
+ON DELETE NO ACTION ON UPDATE NO ACTION
+);
+
+
+schema/modelo 28:40
+modelo dimensional (visa administração da empresa)
+
+no modelo dimensional, a velocidade de busca é mais importante que a redundância de dados
+
+SQL 40:34
+consulta
+SQL - categorias 48:40
+DQL
+  select
+DML
+  insert
+  update
+  delete
+  merge
+DCL
+  grant
+  revoke
+DTL
+  commit
+  rollback
+  savepoint
+DDL
+  create
+  alter
+  drop
+  trucate
+
+Aula 2 prática:
+
+usou o dbdesigner
+char: tamanho fixo
+varchar: variável mais um caractere para marcar o final
+
+criou as tabelas
+criou as relações: clique em 1, depois clique em n
+losango (lado branco = 1, lado preto = n)
+display > notações para relacionamento
+
+decimal(10,2) = dez algarismos, sendo dois deles casas decimais
+
+aplicou as formas normais
+
+concluiu o modelo lógico
+
+iniciou o modelo físico: comandos
+
+file > export > SQL create script
+
+create database delivery;
+use delivery;
+
+interface mysql workbench
+
+show databases;
+
+
+Aula 3:
+
+SQL data types
+numéricos
+caracteres
+temporais
+
+decimal(10,2)
+precisão 10
+escala 2
+
+inteiros: bit, tinyint (1 byte), smallint (2 bytes), int (4 bytes), mediumint, bigint
+ponto flutuante: float e double
+ponto fixo: decimal
+
+caracteres:
+binário (pode usar para armazenar imagens): binary, varbinary, blob
+não binário: char, nchar, varchar, nvarchar e text
+
+char e varchar usam apenas caracteres ASCII
+nchar e nvarchar usam UNICODE
+
+temporais:
+Data: date e year
+Hora: time
+Data e hora: datetime, timestamp
+
+timestamp é a quantidade de segundos
+
+
+select database();
+mostra em qual banco de dados está conectado
+–comentário uma linha
+/*
+comentário de várias linhas
+* /
+
+create table exemplo (id int, nome varchar(100));
+
+insert into exemplo (id, nome) values (1, ‘Ana’);
+
+criando chave estrangeira
+
+create table (id int primary key, nome varchar(100), constraint fkclientCidade foreign key (idCidade) references cidade(id);
+
+insert into client values (1, ‘Joao’, 1);
+
+restrições:
+not null (não pode ficar vazio), check e default
+
+estadoCivil char(01) check (estadoCivil in (‘S’, ‘C’, ‘V’));
+
+null em insert quer dizer deixar o campo vazio
+
+
+describe exemplo;
+mostra os valores da tabela
+
+alter table
+add, modify, change, drop
+
+
+alter table cidade add dddd char(05); – adiciona uma coluna
+alter table cidade change dddd ddd char(05); – muda o nome de uma coluna de dddd para ddd
+alter table cidade modify ddd char(03); – muda o tipo de uma coluna
+
+Aula 3 prática:
+drop table estado; – deleta uma tabela
+show tables; – mostra as tabelas de um banco de dados
+
+select * from product order by preco; – ordem ascendente (asc) é padrão
+select * from product order by preco desc; – ordem decrescente
+
+drop database aula;
+
+
+salario decimal(10,2) unsigned default 0;
+email varchar(120) unique;
+
+auto_increment – incrementa defaultt key (não pode colocar uma chave no insert de dados)
+
+
+…, idEstado int, constraint fkCidadeEstado foreign key (idEstado) references estado(id)
+
+insert into cidade (nome, idEstado) values (‘Curitiba’, 1);
+
+alter table aluno add ddd  int zerofill after email; – adiciona após a coluna email
+
+alter table aluno rename to alunos;
+
+alter table aluno add constraint pkAluno primarykey(id); – adiciona uma chave primária
+
+
+Aula 4:
+
+insert into funcionario (id, nome, cidadeid) select id, nome, cidadeid from cliente;
+
+editar e apagar linhas
+insert into cidade values (2, 'Bagé', 'RS');
+update cidade set nome = 'Gramado' where id = 2;
+update cidade set nome = 'Londrina', uf = 'PR' where id = 2;
+delete from cidade where id = 2;
+
+select * from cidade where cidadeid = 1 and salario > 8000;
+select nome, salario from cidade where cidadeid in (1, 3, 5) order by nome desc;
+
+select nome, salario from cidade where salario >= 5000 and salario <= 8000;
+select nome, salario from cidade where salario between 5000 and 8000;
+
+juntar tabelas
+inner join
+self join
+outer join: left join, right join, full join
+cross join
+
+tabela estado (id, nomeEstado, sigla)
+tabela cidade (id, nomeCidade, EstadoID)
+select nomeCidade, nomeEstado from cidade inner join estado on cidade.EstadoID = estado.id; -- todas as linhas com estadoID
+select nomeCidade, nomeEstado from cidade left join estado on cidade.EstadoID = estado.id; -- todas as linhas da tabela cidade
+select nomeCidade, nomeEstado from cidade right join estado on cidade.EstadoID = estado.id; -- todas as linhas da tabela estado
+
+tabela funcionario (matricula, nomeFunc, gerente)
+select funcionario.nomeFunc, gerente.nomeFunc 
+from funcionario 
+inner join funcionario as gerente
+on funcionario.gerente  = gerente.matricula;
+
+48:00
+as
+union
+case
+
+Aula 4 prática:
+update funcionario
+set cidadeId = (select id from cidade where nome = 'Recife')
+where matricula = 2;
+
+select * from cidade where nome is not null;
+
+select nome from cidade where nome like '%Silva%'; -- silva no início ou final
+select nome from cidade where nome like '%Silva'; -- silva no final do nome
+
+select * from cidade limit 3;
+
+select nome
+case
+  when genero = 'M' then 'masculino'
+  when genero = 'F' then 'feminino'
+  else 'outros'
+end as 'genero'
+from funcionarios;
+
+parece que não precisa do as
+select nome as 'nome funcionário', salario as 'salario antigo', salario * 1.1 as 'salario novo' from funcionario;
+
+select distinct nome, idade; -- elimina linhas iguais do resultado
+
+
+Aula 5: comandos avançados
+
+subconsulta
+update ... set cidadeId = (select id from cidade where nome = 'Recife')
+
+select * from cliente
+where cidadeid in (select id from cidade where nomeCidade = 'Bagé' or nomeCidade = 'Curitiba');
+
+select * from cliente;
+(id, nome, genero, dataNascimento, placaVeiculo, salario, email, cidadeid)
+
+select length(nome), length(dataNascimento) from cliente; -- retorna a quantidade de caracteres armazenada
+
+select upper(nome), lower(nome) from cliente; 
+
+select ltrim(nome), rtrim(nome) from cliente; -- remove espaços
+select trim(both from nome) from cliente; -- remove espaços do início e final
+
+select substring(nome, 5) from cliente; -- 5 primeiros caracteres
+
+select substring(placaveiculo, 1, 3) from cliente;
+select substring(placaveiculo, -5) from cliente;
+
+select replace(email, '#', '@') from cliente;
+select cast('2029-12-31' as date), cast('1000.99' as float) 
+
+
+numérico: round(), truncate(), mod(), div()
+data: curdata(), curtime(), now(), date(), month(), monthname(), year(), day(), week(), weekday(), adddate(), datediff(), date_format()
+hora: timediff(), time(), addtime(), timestamp(), timestampadd(), time_format()
+
+round(salario, 2) -- duas casas decimais
+
+select mod(10, 2), 10 div 2;
+
+select curdate();
+select day('2022-10-02');
+
+select hour('12:04:40');
+
+select adddate('2022-10-02', interval 1 month);
+select datediff('2022-10-02', '2022-10-30');
+
+
+agregação/extração de dados
+count(), sum(), min(), max(), avg(), group by(), having()
+
+select count(*) from funcionario; -- conta linhas
+select count(genero) from funcionario; -- não conta null
+
+select sum(salario) from funcionario;
+
+select min(salario), nome from funcionario; -- pode ter vários salarios iguais, como min retorn 1 valor, teria várias linhas só com nome
+select salario, nome from funcionario
+where salario = (select min(salario) from funcionario);
+
+select departamento, sum(salario) from funcionario
+group by departamento
+having sum(salario) > 20000;
+
+grant, revoke
+create user 'aluno@localhost' identified by '123';
+flush privileges;
+show grants for 'aluno@localhost';
+
+grant select, insert on aula.* to 'aluno@localhost';
+
+drop user 'aluno@localhost';
+
+Aula 5 prática:
+só fez revisão do que foi visto na aula 5
+
+Aula 6:
+create index idxPessoa on pessoa(nome); -- aumenta a rapidez na busca
+show index from pessoa;
+
+select * from pessoa where nome = 'Vitoria';
+
+create view mostraFuncionario
+as
+  select 
+    nomeFunc as 'Nome funcionario',
+    emailFunc as 'email',
+    nascimento
+from funcionario;
+
+depois pode autorizar uma pessoa a ver apenas a view
+
+commit e rollback
+se executar 10 comandos e um falhar, desfaz os 10.
+
+atomicidade: executa um bloco de comando como se fosse algo único
+consistência: repeita as restrições: chave primária e estrangeira, unique, default, check
+isolamento: vários processos são executados ao mesmo tempo e um não pode interferir no outro.
+durabilidade: após ser gravado deve continuar lá
+
+set autocommit = off;
+
+start transaction 
+insert into pessoa values ('zanana', 'teste@teste.com');
+rollback;
+
+trigger antes ou após insert, update ou delete
+
+delimiter $$
+create trigger alteraFuncionario after update on funcionario
+for each row
+begin
+  insert into auditoria values ('alteracao', new.matricula, old.salario, new.salario, curdate());
+end $$
+delimiter ;
+
+
+stored procedure
+controle, repetição, variáveis, funções
+altera tabelas, mas não retorna valores
+entradas são opcionais
+
+create table if not exist
+cartela(concurso int, numero int);
+
+delimiter $$
+create procedure geraNumeros(nroInicial int, nroFinalint, nroConcurso int)
+begin
+  declare nroGerado int default 0;
+  declare i int default 0;
+  while i < 6 do
+    set nroGerado = (select floor(rand() * nroFinal) + nroInicial);
+    if not exists (select * from cartela where numero = nroGerado) then
+      insert into cartela values (nroConcurso, nroGerado);
+    end if;
+    set i = i + 1;
+  end while;
+end $$
+delimiter ;
+call geraNumeros(1, 60, 100);
+
+alter procedure...
+drop procedure...
+
+função definida pelo usuário
+delimiter $$
+create function parImpar(numero int)
+returns char(05) deterministic
+begin
+  declare tipo char(05) default null;
+  set tipo = 'Impar';
+  if numero mod 2 = 0 then
+    set tipo = 'Par';
+  end if;
+  return (tipo);
+end$$
+delimiter ;
+select parImpar(10), parImpar(23);
+
+
+-- Cursor 
+delimiter $$
+create procedure simulaReajuste()
+begin
+    declare done boolean default false;  -- Variável para identificar o final do cursor
+    declare vnome varchar(100); 
+    declare vsalario decimal(10,2);
+    declare vnovoSalario decimal(10,2);
+    declare vdepartamento int;
+
+    declare cursorFuncionario cursor 
+        for select nome, departamento, salario
+        from funcionario;
+
+    declare continue handler 
+        for not found set done = true; 
+    
+    open cursorFuncionario;
+    
+    leCursor: loop
+        fetch cursorFuncionario 
+            into vnome, vdepartamento, vsalario;
+        if done then  -- Testa se o cursor chegou ao final
+	    leave leCursor;  -- Sai do loop ao chegar no final
+        end if;
+        if vdepartamento = 1 then
+	    set vnovoSalario = vsalario + reajuste(vsalario, 10);
+        elseif vdepartamento = 2 then
+	    set vnovoSalario = vsalario + reajuste(vsalario, 12);
+        else
+	    set vnovoSalario = vsalario + reajuste(vsalario, 8);
+        end if;
+        insert into simulacao values (vnome, vsalario, vnovoSalario);
+    end loop;
+close cursorFuncionario;
+end $$
+delimiter ;
+
+-- Executa a procedure
+call simulaReajuste();
+
+
+Aula 6 prática:
+revisão da aula 6
