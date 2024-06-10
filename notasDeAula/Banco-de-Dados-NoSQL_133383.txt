@@ -108,6 +108,7 @@ casos de uso
 situações que não exijam integridade de dados, tenha grande voluma, e alta quantidade de acessos
 -carrinho de compras em site eletrônico
 -aplicativos orientados por sessão: armazenar dados por vez que fez login.
+-sistemas que requerem muitas leituras de dados
 
 A07
 DynamoDB e glitch e nodejs
