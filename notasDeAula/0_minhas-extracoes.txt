@@ -1,3 +1,6 @@
+univirtus > avaliações > agendar
+inicia dia 07 antes do período de provas
+
 https://univirtus.uninter.com/ava/web/
 BACHARELADO EM ENGENHARIA DE SOFTWARE - DISTÂNCIA (6270)
 turma 2022/12
@@ -165,13 +168,97 @@ Tipos de sistemas de informação
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
+Fundamentos-de-Design-de-Sistemas_133362.txt
 
+software tem tempo de vida
+
+documentação, entendido por todos, fazer manutenção
+
+conhecer o negócio da empresa, os concorrentes e trazer inovação
+
+modelo arquitetural
+  - camadas
+    - apresentação
+    - aplicação
+    - banco de dados
+  - cliente-servidor
+    - informações enviadas conforme são requisitadas
+  - MVC (modelo, visão, controle)
+  - Microserviços
+
+https://www.figma.com
+sed.decourt
+
+entrevista: identificar as experiências e expectativas do usuário: "como", "por que".
+
+protótipo
+  - baixa fidelidade (apenas esboço de caneta: caixa com risco, não tem figura, pouco texto)
+  - média fidelidade (prova de conceito: alguma imagem qualquer, um pouco de cor)
+  - alta fidelidade (cores e imagens reais, roteiro de experimentação)
+
+wireframe: representação básica, sem cores
+  foco no conteúdo, estrutura, hierarquia, funcionalidade, comportamento
+
+Pilares da arquitetura da informação
+  - organização (lógica)
+  - rótulo (ícones, títulos)
+  - navegação
+  - busca
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
+Fundamentos-da-Computacao_133363.txt
 
+- Moda
+elementos que aparecem mais vezes
+
+- Mediana
+Ordena os valores, pega o que está na posição central
+se n é par, faz uma média dos dois elementos centrais
+
+Fundamentos de IA
+Se a mente opera de acordo com regras lógicas
+  Pode ser emulada
+Panini (350 a.C.): pensamento é independe da linguagem
+
+um código computacional e uma base de conhecimento. Também tem sensores e atuadores.
+Quase não há possibilidade de aprendizagem (não muda o código ou a base de conhecimento)
+
+jogo dos 15
+Abstrações: regras. Quais ações podem ser feitas.
+Resolução de problemas:
+  - busca na base
+  - teste de objetivo
+Custo: quantidade de ações necessárias para atingir o objetivo.
+
+Constituição Federal
+Leis Complementares
+Leis Ordinárias
+Medidas Provisórias
+Decretos Regulamentadores
+Resoluções, Normas , Portarias
+
+lei 9.609 de 1998
+software
+tutela por 50 anos após a publicação
+independe de registro
+
+sinais de autoria:
+	Padrões de escrita característicos # public class prinCIpal
+	Trechos de código característicos  # var1 = new Aluno(12, "Nome do Cara", 32626262, "ADS");
+	Presença de assinatura oculta      # throw new Exception(“123 456 789 -91 - overflow"
+	Presença de assinatura expressa    # /* Autores: Fulano de Sobrenome e Ciclano de Familia*/
+
+Entrevista técnica
+	Habilidade de encarar um problema com responsabilidade e metodologia
+
+Entrevista de gestão
+	Se será um acréscimo para a empresa
+	Como lidaria com um conflito em sua equipe
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Bancos-de-Dados-Relacionais_133368.txt
 
 
 
