@@ -1,36 +1,52 @@
 133359 	Formação Inicial em EAD
 
+módulo C, fase II
 133360 	Fundamentos de Desenvolvimento de Softwares
 133361 	Fundamentos de Infraestrutura da Tecnologia da Informação
 
+módulo A, fase I
 133362 	Fundamentos de Design de Sistemas
 133363 	Fundamentos da Computação
 
+módulo A, fase II
 133368 	Bancos de Dados Relacionais
 133367 	Comunicação Empresarial
 
+módulo B, fase I
 133364 	Fundamentos de Sistemas de Informação
 133365 	Lógica de Programação e Algoritmos
 
 133411 	Atividades Extensionistas I
 
+módulo B, fase II
 133370 	Análise e Modelagem de Sistemas
 133369 	Engenharia de Software
 
+módulo C, fase I
 133371 	Interface Humano Computador
 133373 	Pré-Cálculo
 
+módulo C, fase II
 133375 	Visualização de Dados e Storytelling
 133376 	Gerencia de Configuração e Evolução
 
+módulo A, fase I
 133372 	Programação Orientada a Objetos
 133379 	Sistema Gerenciador de Banco de Dados
 
+módulo A, fase II
 133374 	Aplicações Web e Móveis
 133383 	Banco de Dados NoSQL
 
-133366 	Engenharia de Requisitos
+módulo B, fase I
 133377 	Linguagem de Programação
+133404 	Big Data
+
+133412 	Atividades Extensionistas II
+
+módulo B, fase II
+
+133366 	Engenharia de Requisitos
 133378 	Qualidade de Software
 133380 	Desenvolvimento Web - Front End
 133381 	Teste de Software
@@ -55,13 +71,11 @@
 133401 	Estética e Design Aplicado
 133402 	Governança de Sistemas da Informação
 133403 	Gestão de Startups
-133404 	Big Data
 133405 	Estudo das Relações Étnico-Raciais para o ensino da História e Cultura Afro-Brasileira e Africana
 133406 	Internet das Coisas
 133407 	Machine Learning
 133408 	Atividades Complementares
 133409 	Estágio Supervisionado
 133410 	Projeto Final de Curso
-133412 	Atividades Extensionistas II
 133413 	Atividades Extensionistas III
 145269 	Eletiva
