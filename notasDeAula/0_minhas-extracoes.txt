@@ -1,0 +1,187 @@
+https://univirtus.uninter.com/ava/web/
+BACHARELADO EM ENGENHARIA DE SOFTWARE - DISTÂNCIA (6270)
+turma 2022/12
+matrícula: 4320512
+
+POLO CAMPINAS (CENTRO) - SP
+Av. Doutor Moraes Salles, 1270 - Centro
+Contato: (19) 3305-3361 | (19) 98734-0206
+Atendimento:Segunda a Sexta-feira: 14h00 às 22h00
+POLOCAMPINASCENTRO@uninter.com
+
+cada ano letivo tem 3 módulos: A, B e C.
+cada módulo tem duas fases: I e II.
+cada fase tem 2 disciplinas
+São 2 APOL, 1 atividade prática, 1 prova objetiva
+
+Preparação – APOL
+Período Regular – Prova Objetiva, Prova Discursiva e Segunda Chamada (caso tenha perdido uma prova ou queira melhorar sua nota)
+Recuperação – Exame, Recuperação de Conceito Paga e Regime Tutorial
+
+média para aprovação é 70
+a média final para aprovação no Exame e na Recuperação passa de 70 para 50.
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Fundamentos-de-desenvolvimento-de-softwares_133360.txt
+
+Se não tem tempo para a engenharia de software, terá tempo para refazer o software?
+
+Objetivo é a qualidade de software
+
+Atributos da qualidade do software:
+	satisfaz os requisitos
+	fácil de usar
+	confiável (tolera falhas)
+	desempenho (rápido)
+	fácil de manter
+
+Engenheiro de Software não é programador, assim como um engenheiro civil não é um pedreiro.
+
+Engenheiro de Software escolhe os processos, as fases e avalia o desenvolvimento.
+Analista: compreensão do problema, levantamento de requisitos e modelagem
+Programador: conhecimento IDEs, linguagem, bibliotecas e testes.
+
+Ciclo de vida ou Modelo de processo:
+	Definição
+		Requisitos (reuniões e documentação)
+		Definição do problema
+		Análise do sistema (estruturado, orientado a objetos)
+	Desenvolvimento
+		Definição de módulos
+		Algoritmo
+		Codificação
+		Testes
+	Manutenção (ajustes)
+		Manual
+		Modificações (inclusão ou alteração de módulos)
+		Treinamento do usuário
+
+Mitos:
+  Gerenciamento:
+    basta ter um livro com regras
+    mais programadores não reduz o tempo: precisa treinar
+    tercerizar: requer acompanhamento
+
+  Cliente:
+    basta definir objetivos, detalhes podem ser ajustados depois. Precisa requisitos detalhados.
+    pode mudar os requistos e o software (afeta os prazos)
+
+  Profissional da área:
+    O trabalho termina quando acaba o desenvolvimento (60% a 80% do tempo é com manutenção)
+    O produto é o software (tem o modelo, os documentos, etc)
+    Documentação é perda de tempo
+
+Modelos de computação em nuvem:
+  IaaS (Infraestrutura como serviço)
+  	Oferece hardware
+  	Usuário gerencia o sistema operacional e o servidor
+  	EC2 da AWS
+  PaaS (plataforma como serviço)
+  	Usuário recebe um ambiente de desenvolvimento
+  	Elastic Beanstalk e RDS da AWS
+  SaaS (software como serviço)
+  	Facebook, Drop Box, Office 365
+
+000webhost.com
+w3schools.com
+
+<link rel=stylesheet href=estilo.css>
+
+pseudo classe
+.imagem:hover {background:#FF0000;} // quando passa o mouse sobre
+
+.alternada {
+ list-style: url(); // upper-latin; upper-roman; upper-alpha;
+}
+.alternada li:nth-child(odd) {background-color:khaki}
+.alternada li:hover {fond-weight: bolder}
+
+<ul class="alternada">
+<li></li>
+</ul>
+
+<p id="para1">
+let paragrafo = document.querySelector("#para1");
+
+paragrafo.addEventListener("click", trocaTexto);
+
+function trocaTexto() {
+  paragrafo.style.backgroud = "red";
+}
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Fundamentos-de-Infraestrutura-da-Tecnologia-da-Informacao_133361.txt
+
+entrada > sistema > saída
+
+processamento: hardware, software, peopleware (usuários ou desenvolvedores) e rede
+
+sistemas de informações = {tecnologia, pessoa, organização}
+
+Bussiness Intelligence: análise automática, gera relatórios
+
+dados:
+  estruturado: modelo predefinido, tabela
+  semi-estruturado: usa tags como separadores, JSON
+  não estruturados: audio, videos, fotos
+
+tríade segurança da informação = {disponibilidade, integridade, confidenciabilidade}
+testar os sistemas de recuperação de dados
+
+Desenvolvimento:
+- levantamento do sistema (qual sistema já possui, quais serão as demandas futuras)
+- análise da necessidade
+- projeto
+- imprementação
+- teste (incluir usuário)
+- mudança
+- manutenção
+
+rede social: visibilidade, marketing
+
+agilidade no tempo de resposta
+  separar em módulos a serem carregados quando necessário
+  eliminar código desnecessário
+  atrasar o carregamento de imagens
+  otimizar imagens
+  adiar scripts
+  reduzir conexões http
+  usar cache
+
+site responsivo: se ajusta à telas diferentes
+
+smallbusiness.withgoogle.com
+
+Tipos de sistemas de informação
+  Sistema de processamento de transações (SPT)
+    Registram as transações rotineiras, como valores recebidos, despesas, folhas de pagamento e controle de estoque.
+    armazenado no banco de dados. Os dados podem ser captados por sensores, como leitores de códigos de barras, ou inseridos por funcionários.
+  Sistema de informação gerencial (SIG)
+    Pegam dados de uma base e geram relatórios.
+  Sistema de apoio à decisão (SAD)
+    Usado para elaborar orçamentos e análise de investimentos. Este sistema usa dados de várias bases.
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
