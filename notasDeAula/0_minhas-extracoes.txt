@@ -260,7 +260,35 @@ Entrevista de gestão
 
 Bancos-de-Dados-Relacionais_133368.txt
 
+Um banco de dados é um conjunto de arquivos. Por exemplo, pode ser só um arquivo csv.
 
+redundância: dados não repetidos
+concorrência: vários usuários editanto simultaneamente
+integridade: não remover se houver dependência, data de nascimento não pode ser maior que a atual
+inconsistência: um mesmo campo tem valores diferentes em sistemas diferentes
+
+
+Modelagem de Dados
+- conceitual: conversa com o cliente, esboço (MER)
+- lógico: SGBD (diagrama contendo nome dos campos e tipo de dado)
+- físico: tabelas, banco de dados no servidor
+
+MER: Modelo Entidade Relacionamento
+Entidade: objeto do mundo real: aluno. Os campos contém as características de uma entidade. Ex.: nome, data de nascimento
+Relacionamento: ligação à outra entidade: aluno reside cidade
+
+Instância de entidade (registros): conjunto de campos ou uma linha da tabela. Ex.: Pessoa: nome, cpf, endereço
+
+cardinalidade
+(1:1) pode ter apenas um conjuge (pessoa possui(1:1) conjuge). Eliminar. Colocar como atributo.
+(n:1) [cliente]---<reside n:1>---[cidade]. Chave estrangeira (FK) fica do lado n. Cliente recebe o código da cidade.
+(n:n) [cliente]---<possi n:n>---[conta]. Cria uma nova entidade
+      [cliente]---<possi 1:n>---[contaCliente]---<possi n:1>---[conta]
+
+banco-de-dados-relacionais_MER.png
+
+(mínimo,máximo)
+[cliente (0,n)]---<reside n:1>---[(1,1) cidade]
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
