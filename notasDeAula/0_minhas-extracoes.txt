@@ -287,8 +287,22 @@ cardinalidade
 
 banco-de-dados-relacionais_MER.png
 
+pé de galinha: [cliente]->--[cidade]
+
 (mínimo,máximo)
 [cliente (0,n)]---<reside n:1>---[(1,1) cidade]
+
+terminologia (conceitual, lógica, sql)
+(entidade, relação, tabela)
+(campo, atributo, coluna)
+(registro, tupla, linha)
+
+Operadores relacionais
+• Operadores unários – seleção (where) e projeção (select);
+• Operadores binários – união (union), diferença (difference) e produto cartesiano (cross join);
+• Operadores derivados – intersecção (intersect), junção (join) e divisão (divide);
+• Operadores especiais – renomeação e atribuição (assignment
+
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
