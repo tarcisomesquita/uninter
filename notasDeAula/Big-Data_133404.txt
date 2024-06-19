@@ -1,0 +1,56 @@
+A01-P01
+sumário
+
+A01-P02
+grande quantidade de dados
+  documento de analógico para digital
+  novos dispositivos (celular, internet das coisas)
+
+Lei de Moore
+  A capacidade de processamento dobra a cada 18 meses
+
+A01-P03
+Volume (data size), Velocity (speed of change), Variety (different forms of data source), Veracity (uncertainty of data)
+Valor, Validade, Vulnerabilidade, Volatilidade, Visualização
+
+Big data coleta dados que pode extrair informações
+
+A01-P04
+fontes: dados internos, datificação, dados de sensores, dados de fontes externas (internet)
+armazenamento: escabilidade, disponibilidade, flexibilidade (suportar diferentes formatos)
+
+NoSQL
+chave-valor: chaves são indexadas, valor não.
+
+A01-P05
+escabilidade vertical (melhorar hardware) e horizontal (aumentar a quantidade de máquinas, que podem estar em diferentes lugares)
+
+Hadoop
+baixo custo, escabilidade, tolerância a falhas (partição) (pode ser de rede), balanceamento de carga, comunicação entre máquinas, alocação de máquinas
+
+HDFS (Hadoop distributed file system)
+MapReduce (processamento distribuido)
+
+baixa latência, consistência, alta disponibilidade
+
+spark core: MapReduce
+GraphX: processamento de grafos
+Spark SQL: 
+MLib: machine learning
+
+componentes spark: driver program, cluster manager, workers
+
+A01-P06
+análise de dados: como processar e extrair informações com valor
+
+entendimento do negócio, compreender os dados, preparação dos dados, modelagem dos dados, avaliação do modelo, utilização do modelo
+
+visualização exploratória, visualização explanatória
+
+A07.mp4
+cloudera.com
+HDP (Hortonworks Data Platform)
+
+
+
+
