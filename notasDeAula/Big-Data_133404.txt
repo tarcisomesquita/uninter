@@ -128,7 +128,24 @@ Oozie
 também usa grafos acíclicos
 
 A08
+HDFS
+https://grouplens.org/datasets/movielens/100k/
+MovieLens dataset
 
+importou arquivo
+
+hadoop fs -ls
+hadoop fs -copyFromLocal u.data /user/maria_dev/
+
+do HDFS para o computador
+hadoop fs -copyToLocal u.data
+
+hadoop fs -rm u.data
+
+hadoop fs
+mostra lista de comandos
+
+Oozie
 
 A03-P01
 
