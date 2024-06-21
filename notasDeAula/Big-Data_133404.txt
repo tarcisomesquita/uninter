@@ -50,7 +50,87 @@ visualização exploratória, visualização explanatória
 A07.mp4
 cloudera.com
 HDP (Hortonworks Data Platform)
+image virtual box
+change root password
 
+Ambari
+
+user maria_dev, admin
+
+views: Files, Hive, Pig, Tez, Workflow
+
+Files: sistema de arquivo
+Hive: importar dados, query
+Pig: escrever scripts
+Tez: grafos, visualização
+Workflow: monitorar fluxos
+
+A02-P01
+Sumário
+
+A02-P02
+ecossistema hadoop: módulos
+
+hadoop é uma plataforma de software open source para o armazenamento e processamento distribuído de conjunto de dados muito grandes em cluster de computadores.
+
+Esquema de módulos
+HDFS (sistema de arquivos), YARN (gerenciador de recursos do cluster), MapReduce (distribui o processamento)
+
+tem um nó que gerencia os outros
+
+A02-P03
+HDFS
+Os dados são distribuidos pelo cluster
+tolerância a partição
+
+blocos de 128 MiB são replicados
+
+data node, name node (nome dos arquivos, quais nodes tem réplica)
+um client node, um name node, vários data node
+
+esquema de escrita de arquivos
+
+A02-P04
+MapReduce
+
+entrada de dados > mapper > conjunto de chave-valor > agrupa valores com a mesma chave
+
+cliente > YARN > Node Manager (aplicação mestre distribui para aplicações MapReducer)
+
+A02-P05
+Alternativas ao MapReducer
+MapReduce é dificil fazer SQL
+
+Pig é muito semelhante ao SQL, o Pig Latin, ainda usa o MapReduce
+relação > tabela
+tupla > registro (linha)
+campo > coluna
+
+tem join
+
+Tez, substitui totalmente o MapReduce
+usa grafos acíclicos e lê menos o FDFS
+
+A02-P06
+Gerenciamento de cluster
+YARN
+
+premeira versão do hadoop tinha apenas os módulos MapReduce e HDFS. Depois acrescentaram o YARN antes do MapReduce.
+
+é um gerenciador de recursos no nó mestre. Ele distribui trabalho para os demais nós.
+
+ZooKeeper
+garante a alta disponibilidade caso tenha uma partição
+
+vários servidores ZooKeeper e vários Clientes ZooKeepers (em nós trabalhadores)
+
+Oozie
+também usa grafos acíclicos
+
+A08
+
+
+A03-P01
 
 
 
