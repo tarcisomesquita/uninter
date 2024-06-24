@@ -148,6 +148,102 @@ mostra lista de comandos
 Oozie
 
 A03-P01
+Banco de dados
+Sumário
+
+A03-P02
+Hive
+Faz consultas
+
+HiveQL
+Opera em MapReduce ou Tez
+
+schema on read
+
+A03-P03
+Integração a banco de dados relacionais: Sqoop
+
+sqoop import --connect jdbc:mysql://localhost/foobar --driver com.mysql.jdbc.Driver --table foo
+--hive import
+--incremental
+
+sqoop export --connect jdbc:mysql://localhost/foobar --driver com.mysql.jdbc.Driver --table exported_foo --export-dir /app/hive/warehouse/foo --input-fields-teminated-by '\001'
+
+A03-P04
+NoSQL
+CAP: tolerância a Partição é fixa, portanto escolhe ou Consistência ou Disponibilidade
+
+chave-valor, documentos, colunas, grafos
+
+SGBD: HBase
+
+A03-P05
+NoSQL externo
+
+Cassandra
+Linguagem CQL
+Suporta ACID
+Não tem JOIN
+Não tem chave estrangeira
+Nós distribuidos em forma de anel, sem mestre.
+
+MongoDB (documentos)
+JSON
+Consistência e Partição, logo pode ficar indisponível, pois tem que retornar dados atuais.
+
+Coleções e documentos
+dados embutidos
+dado normalizados (faz referência a outro documento)
+
+Servidor primário replica para segundários.
+
+A03-P06
+Motores de consulta SQL
+Drill: dados em formato JSON, usa SQL, usa ZooKeeper
+Phoenix: SQL para HBase, ACID, MapReduce, Spark, Hive, Flume
+Presto: SQL para OLAB, projetado pelo Facebook, suporta esquemas relacional e nosql
+
+A09
+importa dados e faz consulta
+
+Hive
+upload table
+u.data
+colocou nos nomes das colunas
+
+upload table
+u.item
+indicou que o separador é |
+colocou nos nomes das colunas
+colocou o nome da tabela "names"
+
+Query
+importou query
+
+
+HBase
+configurou
+Pig
+conectou pelo shell
+hbase shell
+criou tabela
+consultou
+apagou
+
+
+MySQL
+Sqoop
+configura uma tabela no MySQL
+sqoop import
+mostrou os comandos, mas não mostro a prática
+
+
+Cassandra
+Instalou
+
+
+MongoDB
+Instalou
 
 
 
