@@ -314,3 +314,55 @@ Visualizacao-de-Dados-e-Storytelling_133375.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
+Fundamentos-de-Sistemas-de-Informacao_133364.txt
+
+Desenvolvimento:
+- levantamento do sistema (qual sistema já possui, quais serão as demandas futuras)
+- análise da necessidade
+- projeto
+- imprementação
+- teste (incluir usuário)
+- mudança
+- manutenção
+
+dados estruturados, não estruturados, semi-estruturado
+
+estruturado: modelo predefinido, tabela
+semi-estruturado: usa tags como separadores, JSON
+não estruturados: audio, videos, fotos
+
+tríade segurança da informação = { disponibilidade, integridade, confidenciabilidade}
+
+SEO
+
+agilidade no tempo de resposta. Teste em conexões lentas.
+splitting: separar em módulos a serem carregados quando necessário
+free shaking: eliminar código desnecessário
+lazy loading: atrasar o carregamento de imagens
+adiar scripts
+
+reduzir conexões http
+otimizar imagens
+usar cache
+
+site responsivo: se ajusta à telas diferentes
+
+smallbusiness.withgoogle.com
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
