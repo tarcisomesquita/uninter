@@ -1,0 +1,397 @@
+
+Aula 01:
+Lógica e algoritmos
+
+p3
+hardware
+
+Von Newman: unidade de controle, unidade lógica aritmética, memória ram, entrada e saída. Começou a usar binários
+
+bit, byte, megabyte
+
+Sistema Operacional: abstrai o hardware
+
+descrição narrativa
+pseudo código ou português estruturado
+fluxograma
+
+p5
+linguagens e compiladores
+compilador, interpretador
+
+language ranking: IEEE spectrum
+
+p6
+python.org
+
+Aula 01 pratica:
+diferentes trabalhos de um programador
+
+https://colab.research.google.com
+
+idle shell
+pycharm
+
+Aula 02:
+p2
+p3
+print('Olá mundo!')
+case sensitive
+print('Olá ' + 'mundo!')
+print('Olá ', 'mundo!')
+operadores matemáticos
+
+p4
+dados, variáveis
+ordem de precedência
+nome da variável: [0-9A-z_], aceita acentos
+tipos de dados: numérico, caractere, boleana
+ASCII
+string
+índice numa string: frase = 'Olá'; frase[2] = 'á'
+
+p5
+'A' + '-' * 10 + 'B' = 'A----------B'
+
+nota = 8.5
+s1 = 'você tirou %.2f' % nota
+
+disciplina = 'bio'
+nota = 8.5
+s1 = 'você tirou %.2f em %s' % (nota, disciplina) 
+s1 = 'você tirou {} em {}'.format(nota, disciplina) 
+s1[10:15]
+s1[:5]
+tamanho = len(s1)
+
+p6
+idade = input('Qual é sua idade? ')
+input retorna uma string
+
+nota = float(input('Qual é sua nota? '))
+idade = int(input('Qual é sua idade? '))
+
+Aula 02 prática:
+abs(54-57)
+min(34, 29, 31)
+
+Aula 03:
+Condições
+
+p2
+se, senão
+
+p3
+parênteses é opcional
+if (condição):
+  # instrução
+else:
+  # instrução
+
+p4
+operadores lógicos
+not, and, or
+x = True
+y = False
+
+precedência: parênteses, potenciação e radiciação, multiplicação e divisão e módulo, adição e subtração, relacionais (>, <, >=, <=, ==), not, and, or, atribuição
+
+p5
+condicional alinhadas
+if
+else
+  if
+  else
+
+p6
+if
+elif
+else
+
+Aula 03 prática:
+Leia o texto da disciplina
+
+
+Aula 04: repetição
+
+p2
+p3
+parênteses opcional
+while (condição):
+  # instruções
+
+variaveis contadoras (i) e acumuladoras (total += i)
+
+p4
+operadores especiais de atribuição (+=, /=, **=, etc)
+while True:
+  break
+
+s = '' ou n = 0 equivale a falso
+
+s = ''
+while not s:
+  s = input('Digite seu nome: ')
+
+p5
+laço for
+
+for i in range(6):
+  print(i)
+saída: 0, 1, 2, 3, 4, 5
+
+for i in range(1, 6, 1):
+  print(i)
+saída: 1, 2, 3, 4, 5
+
+p6
+
+Aula 04 prática:
+refez exercícios da aula teórica
+
+
+Aula 05:
+função, passagem de parâmetro, scopo de variável
+
+p2
+def fun_nome():
+
+primeiro cria a função, depois chama
+
+p3
+def fun_nome(parâmetro):
+
+def fun_nome(x, y):
+
+# troquei a ordem dos parâmetros
+fun_nome(y = 3, x = 4)
+
+# x = 2, y = 0
+fun_nome(2)
+
+p4
+escopo local e global
+
+def comida():
+	print(ovos)
+
+ovos = 12
+comida()
+
+ = = =
+def comida():
+	ovos = 6
+
+ovos = 12
+comida()
+print(ovos)
+# imprime 12, pois em comida a variável é local
+poderia ter escrito "global ovos = 6"
+
+p5
+def soma(x, y):
+	resultado = x + y;
+	return resultado
+
+print(soma(2,3))
+
+p6
+erro de sintaxe e de excessão
+excessão: usuário entrou um dado num formato diferente
+https://docs.python.org/pt-br/3/library/exceptions.html#bltin-execeptions
+
+while True:
+	try:
+		x = int(input('Digite um número inteiro: '))
+	except ValueError:
+		print('A entrada não foi um número inteiro')
+	except:
+		print('Erro não previsto')
+	else:
+		return x
+	finally:
+		print("executará sempre")
+
+ = = = =
+
+# função como argumento
+def imprime(num, func):
+	if func(num):
+		print(num)
+
+def par(x):
+	return x % 2 == 0
+
+imprime(4, par)
+
+ = = = =
+
+função lambda
+
+res = lambda x, y: x + y
+print(res(3, 5))
+
+Aula 05 prática:
+help()
+print
+quit
+
+#main
+help(print)
+
+def soma(x = 0, y = 0, z = 0):
+	"""
+	Retorna a soma de três números.
+	Todos os parâmetros são opcionais.
+	
+	:parâmetro x: valor numérico (opcional)
+	:parâmetro y: valor numérico (opcional)
+	:parâmetro z: valor numérico (opcional)
+	:return: número
+	"""
+	
+	return x + y + z
+
+print(soma(3,2))
+help(soma)
+
+arquivo = open('arquivo.txt', 'rt')
+arquivo.read();
+except FileNotFoundError:
+arquivo.close()
+
+arquivo = open('arquivo.txt', 'wt+') # cria o arquivo
+arquivo = open('arquivo.txt', 'at') # append
+arquivo.write('{};{}\n'.format(nomeJogo, nomeVideoGame));
+arquivo = open('arquivo.txt', 'rt') # lê
+print(arquivo.read()) # lista todo o conteúdo do arquivo
+
+
+Aula 06:
+variáveis compostas ou estruturas de dados: tuplas (), listas [], dicionários {}
+métodos
+
+p2
+tupla é estática, imutável
+mochila = ('Machado', 'Camisa', 'Bacon', 'Abacate')
+print(mochila[0])
+print(mochila[2])
+print(mochila[0:2]) # indices 0 e 1
+print(mochila[2:])  # indices 2 ...
+print(mochila[-1])
+
+for item in mochila:
+	print('Minha mochila tem {}'.format(item))
+
+for i in range(0,len(mochila),1):
+	print('Minha mochila tem {}'.format(mochila[i]))
+
+mochila = ('Machado', 'Camisa', 'Bacon', 'Abacate')
+upgrade = ('Queijo', 'Canivete')
+mochila_grande = mochila + upgrade
+print(mochila_grande)
+
+desempacotamento
+def soma(*num):
+	soma = 0
+	print('Tupla {}'.format(num))
+	for item in num:
+		soma += item
+	return soma
+
+print('resultado: {}\n'.format(soma(1,2)))
+print('resultado: {}\n'.format(soma(1,2,3)))
+
+p3
+lista: estrutura dinâmica, pode alterar dados e tamanho
+mochila = ['Machado', 'Camisa', 'Bacon', 'Abacate']
+
+print(mochila)
+mochila[2] = 'Laranja'
+mochila.append('Ovos')
+mochila.insert(1, 'Canivete')
+print(mochila)
+
+del mochila[1]
+mochila.remove('Ovos')
+print(mochila)
+
+x = [5, 7, 9, 11]
+y = x # apenas referencia a memória
+y[0] = 2
+print(x)
+print(y)
+
+y = x[:] # cópia
+y[0] = 3
+print(x)
+print(y)
+
+lista é um objeto (POO).
+variável.função(parâmetro)
+
+p4
+print(variavel, end='') # não quebra linha
+
+pode colocar uma lista dentro de outra lista
+
+os itens podem ser diferentes tipos de valores
+
+mercado = []
+item = []
+mercado.append(item[:])
+item.clear()
+
+mercado.append([nome, quantidade, valor])
+
+p5 dicionário
+a indexação não será um número
+
+var_dicionario = {chave:valor, chave:valor}
+item = chave:valor
+
+game = {'nome': 'Super Mário', 'desenvolvedor': 'Nintendo', 'ano': 1990}
+print(game['nome'])
+
+print(game.values())
+for value in game.values():
+	print(value)
+
+print(game.keys())
+for key in game.keys():
+	print(key)
+
+print(game.items())
+for item in game.items():
+	print(item)
+
+for key, value in game.items():
+	print('A chave "{}" tem o valor "{}"'.format(key, value))
+
+p6
+s1 = 'Algoritmos' # string é imutável
+s1 = list('Algoritmos')
+print(s1)
+print(''.join(s1))
+s1[1] = 'a' # agora pode mudar o valor 
+
+métodos de uma string: startswith, endswith, count, lowe, upper, split, strip, replace
+isalnum, isalpha, isupper
+
+
+Aula 06 prática:
+importar bibliotecas, traz novas funções
+https://docs.python.org/3/library/index.html
+
+print(sqrt(9))
+import math
+print(math.sqrt(9))
+
+import math as m
+print(m.sqrt(9))
+
+from math import sqrt
+print(sqrt(9))
+
+for letra in palavra:
+	if letra in 'aeiou':
