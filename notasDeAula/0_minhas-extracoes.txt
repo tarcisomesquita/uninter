@@ -1,7 +1,8 @@
+
 univirtus > avaliações > agendar
 inicia dia 07 antes do período de provas
 
-https://univirtus.uninter.com/ava/web/
+https://univirtus.uninter.com
 BACHARELADO EM ENGENHARIA DE SOFTWARE - DISTÂNCIA (6270)
 turma 2022/12
 matrícula: 4320512
@@ -10,19 +11,26 @@ POLO CAMPINAS (CENTRO) - SP
 Av. Doutor Moraes Salles, 1270 - Centro
 Contato: (19) 3305-3361 | (19) 98734-0206
 Atendimento:Segunda a Sexta-feira: 14h00 às 22h00
-POLOCAMPINASCENTRO@uninter.com
+polocampinascentro@uninter.com
 
 cada ano letivo tem 3 módulos: A, B e C.
 cada módulo tem duas fases: I e II.
 cada fase tem 2 disciplinas
-São 2 APOL, 1 atividade prática, 1 prova objetiva
+Avaliações: 2 APOL (30%), 1 prova objetiva (30%), 1 atividade prática ou prova discursiva (40%).
+Nota de aprovação: 70%
 
 Preparação – APOL
 Período Regular – Prova Objetiva, Prova Discursiva e Segunda Chamada (caso tenha perdido uma prova ou queira melhorar sua nota)
-Recuperação – Exame, Recuperação de Conceito Paga e Regime Tutorial
+Recuperação – Exame, Recuperação de Conceito Paga e Regime Tutorial. Nota de aprovação: 50%.
 
-média para aprovação é 70
-a média final para aprovação no Exame e na Recuperação passa de 70 para 50.
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Outros alunos/repositórios
+https://github.com/CarolFenixBr/UNINTER
+https://github.com/CarolFenixBr/Atividade-pratica-Big-Data
+https://github.com/joaovic-tech/
+https://github.com/SkyArtur
+https://github.com/leonamcassemir0/software-engineer
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
@@ -72,7 +80,7 @@ Mitos:
 
   Profissional da área:
     O trabalho termina quando acaba o desenvolvimento (60% a 80% do tempo é com manutenção)
-    O produto é o software (tem o modelo, os documentos, etc)
+    O produto é o software (tem o modelo, os documentos, treinamento, etc)
     Documentação é perda de tempo
 
 Modelos de computação em nuvem:
@@ -159,8 +167,9 @@ smallbusiness.withgoogle.com
 
 Tipos de sistemas de informação
   Sistema de processamento de transações (SPT)
+    Armazenado em banco de dados.
     Registram as transações rotineiras, como valores recebidos, despesas, folhas de pagamento e controle de estoque.
-    armazenado no banco de dados. Os dados podem ser captados por sensores, como leitores de códigos de barras, ou inseridos por funcionários.
+    Os dados podem ser captados por sensores, como leitores de códigos de barras, ou inseridos por funcionários.
   Sistema de informação gerencial (SIG)
     Pegam dados de uma base e geram relatórios.
   Sistema de apoio à decisão (SAD)
@@ -219,7 +228,7 @@ se n é par, faz uma média dos dois elementos centrais
 Fundamentos de IA
 Se a mente opera de acordo com regras lógicas
   Pode ser emulada
-Panini (350 a.C.): pensamento é independe da linguagem
+Panini (350 a.C.): pensamento é independe da linguagem (a língua é uma ferramenta para o pensamento)
 
 um código computacional e uma base de conhecimento. Também tem sensores e atuadores.
 Quase não há possibilidade de aprendizagem (não muda o código ou a base de conhecimento)
@@ -246,7 +255,7 @@ independe de registro
 sinais de autoria:
 	Padrões de escrita característicos # public class prinCIpal
 	Trechos de código característicos  # var1 = new Aluno(12, "Nome do Cara", 32626262, "ADS");
-	Presença de assinatura oculta      # throw new Exception(“123 456 789 -91 - overflow"
+	Presença de assinatura oculta      # throw new Exception("123 456 789 -91 - overflow");
 	Presença de assinatura expressa    # /* Autores: Fulano de Sobrenome e Ciclano de Familia*/
 
 Entrevista técnica
@@ -303,8 +312,13 @@ Operadores relacionais
 • Operadores derivados – intersecção (intersect), junção (join) e divisão (divide);
 • Operadores especiais – renomeação e atribuição (assignment
 
+TERMINAR
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Comunicacao-Empresarial_133367.txt
+
+
 
 
 
