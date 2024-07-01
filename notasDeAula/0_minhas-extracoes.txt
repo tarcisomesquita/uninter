@@ -26,10 +26,10 @@ Recuperação – Exame, Recuperação de Conceito Paga e Regime Tutorial. Nota 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 Outros alunos/repositórios
+https://github.com/N-CPUninter
 https://github.com/CarolFenixBr/UNINTER
 https://github.com/CarolFenixBr/Atividade-pratica-Big-Data
-https://github.com/joaovic-tech/
-https://github.com/SkyArtur
+https://github.com/SkyArtur/TrabalhoBancoDeDadosRelacionais
 https://github.com/leonamcassemir0/software-engineer
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
