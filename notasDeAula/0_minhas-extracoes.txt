@@ -369,7 +369,7 @@ Interação:
 
 imagem: uma referência (https://babelnet.org/, google images, https://pixabay.com/, https://yandex.com/images/, https://tineye.com/)
 
-não fique parado enquanto fala, fique atento, aprenda sobre seu público e quaisquer fatores logísticos
+não fique parado enquanto fala, fique atento, aprenda sobre seu público e quaisquer fatores logísticos (terá computador, terá datashow, usa linux, etc)
 som da sua voz calma e confiante colocará você e seu público à vontade
 afinação vocal: Ritmo, tom e pausas.
 numa apresentação eficaz, a mensagem é adequada ao público
