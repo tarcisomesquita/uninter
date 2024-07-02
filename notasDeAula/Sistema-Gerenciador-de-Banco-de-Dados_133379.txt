@@ -1,0 +1,444 @@
+A01_P01
+dado se tornou o bem mais valioso da empresa
+
+DBA - data base adminstrador
+
+A01_P02
+o que um SGBD faz: armazena, recupera, verifica integridade, gerencia acesso
+
+DDL: Linguagem de Definição de Dados: CREATE, DROP, ALTER
+DML: Linguagem de Manipulação de Dados: INSERT, DELETE, UPDATE, SELECT
+DCL: Linguagem de Controle de Dados: CREATE USER, GRANT, REVOKE
+
+schema: como os dados são interligados
+
+instâncias são criadas com CREATE
+
+um objeto é uma tabela?
+
+segurança (backup e restore)
+controle de acesso (usuários)
+contole de redundância: regras de controle (não ter dados repetidos) e garante integridade
+
+possibilita gerenciamento externo (pela internet)
+
+controle de concorrência: evita mudanças simultâneas de um objeto
+
+desvantagens: licença e alto custo, muito processamento, mão de obras especializada
+
+A01_P03
+Tipos de banco de dados
+Relacional: fácil uso, usa linhas e colunas, SQL
+
+NoSQL ou não relacionais, como imagem, audio e video
+
+Oracle data base: mais utilizado por grandes empresas
+recuperação ágil, alta tolerância a falhas
+
+MySQL: muito usado em aplicações para internet
+muitas interfaces para usuário
+alta performance
+
+SQL server: é da microsoft e tem interface amigável
+armazenamento em nuvem
+criptografia
+
+PostgreSQL: robusto, alto desempenho e multitarefa
+
+
+A01_P04
+desempenho é uma alta disponibilidade dos dados do banco. Disponibilidade 24h/7dia/semana
+
+pensar no crescimento
+
+segurança
+
+CREATE DATABASE [IF NOT EXIST] nome_do_banco_de_dados
+CHARACTER SET nome_charset
+[COLLATE nome_collation]
+[ENCRYPTION] [=] {'Y'|'N'};
+
+
+Para o Português, o nome_charset mais usado é o 'latin1', mas é recomendado usar 'UTF-8' 
+utf8mb4
+
+Collations: latin1_general_ci e latin1_general_cs, sendo a última case sensitive
+utf8mb4_unicode_ci
+
+A01_P05
+CREATE USER 'nome_usuario@localhost'
+IDENTIFIED BY 'senha'
+GRANT ALL PRIVILEGES ON name_db.* TO 'nome_usuario@localhost' // name_db.nome_tabela
+FLUSH PRIVILEGES
+
+A01_P06
+DBA deve implementar segurança, backup, melhorias e atualizaçoes, monitorar o espaço em disco.
+
+https://www.salario.com.br/tabela-salarial/
+
+A07
+download > mysql.com
+
+A02_P01
+tem empresa que contrata uma pessoa para cuidar do software SGBD e outra para cuidar da base
+
+backup e restore
+
+A02_P02
+Cliente, Produto e Venda
+
+uma tabela para cada objeto
+
+segurança: confidenciabilidade (acesso não autorizado), integridade (alteração indevida) e disponibilidade (não conseguir acesso)
+
+concorrência gerencia transações (ACID):
+ - Atomicidade: transação deve ser feita inteira ou abortada
+ - Consistência: numa concorrência, não deixar uma transação interferir em outra
+ - Isolamento: fazer uma transação por vez
+ - Durabilidade: mantar no banco as transações realizadas com sucesso
+
+A02_P03
+Tabelas do Sistema
+usadas para fazer controle
+
+master contém tabelas com os registros de todos os objetos
+tem metadados com informações sobre os objetos
+
+A02_P04
+Gerenciamento dinâmico
+
+Views
+
+é um sistema que usa o banco de dados
+
+log da situação atual do SGBD: consumo de recurso, espaço em disco, etc
+dashboard: gráficos
+
+A02_P05
+Backup e Restore
+
+full ou parcial
+
+full: problemas: espaço, tempo, indisponibilidade do sistema
+
+precisa planejar, definir responsável, testar
+
+
+A02_P06
+Recuperação = restore
+praticamente repetiu o que disse na aula anterior
+
+A08
+GRANT [ALL|INSERT|SELECT|CREATE|DROP|SELECT|UPDATE]
+
+normalmente apenas administradores criam objetos
+
+REVOKE INSERT ON *.* FROM 'usuario'@'localhost';
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'usuario'@'localhost';
+
+criou tabela e deu permissões
+mostrou comandos
+
+A03_P01
+Monitorar SGBD
+
+A03_P02
+Análise de desempenho
+
+aumenta o volume de dados, aumenta a dificuldade de gerenciamento
+
+periodicamente eliminar dados desnecessários
+
+A03_P03
+Confidenciabilidade
+
+restringir acesso a informação
+
+senhas fortes
+
+Qual impacto do banco de dados na empresa
+
+ameaça é uma ação que pode causar danos
+
+malware, ransomware (sequestro de dados)
+
+Engenharia social > estou com um problema, me ajude com sua senha
+
+DDOS > indisponibilidade
+
+
+A03_P04
+Certificados e criptografia
+
+BD depende da rede
+
+criptografica serve também para autenticação do remetente e irretratibilidade ou não repúdio, que é não negar a autoria
+
+A03_P05
+integridade
+
+A03_P06
+auditoria
+verifica se as atividades estão seguindo as regras pré-estabelecidas, as legilações, os logs, políticas de segurança
+
+A09
+INSERT, DELETE, UPDATE, SELECT
+
+SALARIO NUMERIC(6,2)
+
+SET SQL_SAFE_UPDATES = 1; // impede DELETE sem WHERE, ou seja, apagar a tabela inteira
+
+A04_P01
+Manutenção
+
+A04_P02
+atualização de software
+
+limpeza de dados e índices
+mysqlcheck
+backup
+
+A04_P03
+Importar/Exportar
+
+arquivo dump
+
+compactar
+
+verificar se coincide formato de data, charset
+
+atenção na queda de desempenho do sistema durante a manutenção
+
+mysqldump --databases DATABASE_NAME -h INSTANCE_IP -u USERNAME -p --hex-blob --single-transation --set-gtid-purged=OFF --default-character-set=utf8mb4 > SQL_FILE.sql
+
+A04_P04
+Replicação de dados (duplicar)
+
+o servidor master replicar para servidores slave
+
+disponibilidade: se o master parar, um slave assume o trabalho
+
+A04_P05
+Migração de dados
+
+Ir de um SGBD para outro, ou de uma versão para outra
+
+verificar: booleanos, casas decimais
+
+mysql se conecta ao Access (driver ODBC)
+
+para ir do SQL Server para Mysql, pode usar o Access como ponte
+
+Exportar dados para CSV
+
+usar script para converter dados
+
+A04_P05
+Espaço em disco
+
+TRUCATE TABLE
+
+A10
+Extração de informação
+
+SELECT * FROM FUNCIONARIO;
+SELECT NOME, SALARIO * 1.1 FROM FUNCIONARIO;
+SELECT NOME, SALARIO, SALARIO * 0.1 AS 'GRATIFICACAO TOTAL' FROM FUNCIONARIO; // cabeçalho da coluna
+
+SELECT DATA_NCTO FROM FUNCIONARIO;
+SELECT DAY(DATA_NCTO) FROM FUNCIONARIO;
+SELECT NOME, DATA_NCTO FROM FUNCIONARIO WHERE MONTH(DATA_NCTO)=3;
+
+SELECT DATE_FORMAT(DATA_NCTO, '%d/%m/%Y') FROM FUNCIONARIO;
+
+SELECT CURDATE();
+
+A05_P01
+Performance
+
+normalizaçao e redundância
+
+concorrência
+
+A05_P02
+normalizaçao
+
+objetivo: diminuir a redundância (repetição de dados) e aumentar a integridade
+
+formas normais > 5 regras de normalização
+
+definir todos os atributos das entidades (objetos)
+
+1FN: atributos atômicos, ou seja, a tabela não pode ter valores repetidos, nem atributos com mais de um valor
+
+FUNCIONARIO
+ IDENTIFICADOR
+ NOME
+ ENDEREÇO
+ TELEFONE(1,n) // tem mais de um valor, então tem que separar
+
+FUNCIONARIO (1,1) --- TEM --- (1,n) TELEFONE
+
+2FN: os atributos devem depender unicamente do atributo identificador
+FUNCIONARIO
+ IDENTIFICADOR
+ NOME
+ ENDEREÇO
+ CARGO
+ DESC_CARGO
+
+FUNCIONARIO (1,n) --- TEM --- (1,1) CARGO
+
+3FN: todo atributo de ser independente dos demais
+FUNCIONARIO
+ IDENTIFICADOR
+ NOME
+ ENDEREÇO
+ CARGO
+ SALARIO
+ VALOR_FGTS
+ DATA_NCTO
+ IDADE
+
+tirar VALOR_FGTS, por que depende de SALARIO
+tirar IDADE por que depende de DATA_NCTO
+
+A05_P03
+Concorrência
+
+atomicidade
+consistência (primeiro tem preferência para fazer transação)
+permanência
+
+A05_P04
+Otimização de consulta
+
+configuração de hardware, SO, e software
+
+"slow log" registra atividades que duraram mais que 10 s.
+
+A05_P05
+Estatística
+
+Acompanhar o dia-a-dia
+
+quanto tempo as consultas estão demorando
+
+está atendendo a demanda de usuários?
+
+A05_P06
+otimizar índices
+
+colocar os nomes em ordem alfabética para encontrar mais rápido numa busca
+
+indice clusterizado: armazenado fisicamente
+
+heap: amontoado, sem ordem lógica
+
+se criar muitos índices diminui a performance
+
+A11
+conversão de dados
+
+SELECT CAST(NOME AS CHAR(10)) FROM FUNCIONARIO;
+
+SELECT CAST(SALARIO AS UNSIGNED INT) FROM FUNCIONARIO;
+
+SELECT FORMAT(SALARIO,3) FROM FUNCIONARIO; // 3 casas decimais
+
+Funções agrupadoras: COUNT, SUM, AVG, MAX, MIN
+
+SELECT COUNT(*) FROM FUNCIONARIO; // conta todas as linhas
+
+GROUP BY
+
+condições de pesquisa
+SALARIO = 5000
+>, >=, <=, <> (diferente)
+SELECT * FROM FUNCIONÁRIO WHERE NOME LIKE 'M%'; // 	nomes começando com M
+
+WHERE CARGO IS NOT NULL;
+
+ORDER BY NOME ASC
+DESC
+
+A06_P01
+universo
+
+A06_P02
+Banco de dados distribuídos
+
+replicação
+
+fragmentação
+
+vantagens: confiabilidade, disponibilidade, autonomia local, desempenho
+
+A06_P03
+Data warehouse
+banco de consulta
+não são dados muito recentes
+
+coleta dados de várias fontes para poder fornecer relatórios do histórico
+
+acessados por Business Intelligence (BI), aplicativos SQL
+
+é usado quando envolve a leitura de grandes volumes de dados
+
+ETL (Extraction, Transformation, Loading)
+na tranformação é descartado dados que não aparecerão nos relatórios
+
+tabelas separadas requer mais tempo para consulta
+
+desvantagens: perde a visão do todo, mais trabalho pois vão querer mais data warehouse
+
+A06_P04
+Data Lake
+Não faz ETL, pois carrega primeiro e quando precisar transforma
+
+guarda informações vinda de sensores
+
+A06_P05
+NoSQL
+dados não relacionais, sem tabela
+armazenar imagens
+
+A06_P06
+Ciência de dados
+
+análise de dados
+
+usa a estatística para otimizar os processos
+
+A12
+Relacionamento entre tabelas
+
+funcionario N:1 cargo
+produto N:N cliente
+
+DE-R (Diagrama Entidade-Relacionamento)
+
+FUNCIONARIO (1,n) --- TEM --- (1,1) CARGO
+1 funcionário tem 1 cargo
+1 cargo tem n funcionários
+não tem N:1, é sempre 1:N
+ +---- 1:1 ----+
+ | +-- 1:N --+ |
+ | |         | |
+(1,n)  TEM  (1,1)
+
+N:N cria três tabelas
+
+create table depto(codigo int, nome varchar(100)); create table funcionario(matricula int, nome varchar(100), cpf char(11), codigo int)
+
+SELECT NOME, CARGO, DATA_NCTO 
+FROM TB_FUNCIONARIO INNER JOIN TB_CARGO 
+ON TB_FUNCIONARIO.CODIGO = TB_CARGO.CODIGO 
+WHERE NOME LIKE 'M%';
+
+
+SELECT nome, cargo, salário FROM funcionário, cargo ON funcionario.codigo = cargo.codigo WHERE nome LIKE 'm%';
+
+select turma, sum(mensalidade) from aluno where year(data_matricula) = year(curdate()) group by turma 
+
+select turma, sum(mensalidade) from aluno group by turma order by turma
