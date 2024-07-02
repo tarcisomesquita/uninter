@@ -349,34 +349,6 @@ ilustração: empresa x fez
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Visualizacao-de-Dados-e-Storytelling_133375.txt
-
-Objetivos: ser claro, contar uma boa história, levar um bom conteúdo
-conhecer o público e adequar a linguagem (palavras) e *exemplos*
-Selecionar itens e a sequência
-preparar recursos visuais
-ensaiar para obter o tempo certo
-
-castelo da memória: pegar uma região conhecida. Se imaginar passeando por ela. Incluir na paisagem elementos que quer lembrar.
-
-usar a narrativa para acionar respostas emocionais e cognitivas
-
-Interação:
-- perguntas inclusivas (apresentador pergunta)
-- perguntas e respostas (platéia pergunta)
-- incentivo à participação (brindes)
-- interação além do auditório (usar hashtags)
-
-imagem: uma referência (https://babelnet.org/, google images, https://pixabay.com/, https://yandex.com/images/, https://tineye.com/)
-
-não fique parado enquanto fala, fique atento, aprenda sobre seu público e quaisquer fatores logísticos (terá computador, terá datashow, usa linux, etc)
-som da sua voz calma e confiante colocará você e seu público à vontade
-afinação vocal: Ritmo, tom e pausas.
-numa apresentação eficaz, a mensagem é adequada ao público
-o discurso se adapta ao momento, às reações do público
-
- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
 Fundamentos-de-Sistemas-de-Informacao_133364.txt
 
 Desenvolvimento:
@@ -412,6 +384,107 @@ site responsivo: se ajusta à telas diferentes
 
 smallbusiness.withgoogle.com
 
+Nosso trabalho é conhecer os recursos disponíveis
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Logica-de-Programacao-e-Algoritmos_133365.txt
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Analise-e-Modelagem-de-Sistemas_133370.txt
+
+Ouve as necessidades do usuário. Entender a necessidade e devolver para o usuário.
+Vai melhorar minha vida, vai trazer benefícios para mim? Isso deve estar claro para que forneçam informações.
+
+Um processo é uma sequência de passos (ações e agentes)
+
+processos de negócio (o que o software vai automatizar)
+
+desenhar o fluxo do proceso AS IS e do processo TO BE
+fluxos precisam ser aprovados pelos usuários
+
+papéis e responsabilidades dentro do processo
+
+identificar falhas, dificuldades, coisas que podem ser melhoradas
+
+BPMN
+Notação de Modelagem de Processo de Negócio
+FIGURA
+retângulo = ação
+losango = decisão (divisão de fluxo)
+tem setas de direção
+tem ponto de entrada (pode ter vários. Por exemplo, inicia pela internet ou presencialmente)
+pode ter vários pontos de saída
+
+tarefa (bola azul): algo feito em um processo por um ator conhecido
+evento (bola amarela): ação que são acionadas pelo ambiente externo
+
+https://edrawmax.com
+
+DFD (diagrama de fruxo de dados)
+
+análise de sistema: melhor caminho lógico para processar informação
+transformas as necessidades do cliente em funcionalidades do software
+
+pode construir DFD para cada nível de detalhes
+nível zero: nome e departamentos que usarão
+
+requisitos são as necessidades e o que o software deve fazer para atender essas necessidades
+
+passos:
+1) concepção: compreender o problema, conhecer o cenário de atuação e as necessidades (fluxo)
+2) levantamento: entender em detalhes as necessidades entrevistando os funcionários (fluxo)
+3) elaboração: organiza as informações ao elaborar um modelo técnico
+4) negociação: os usuários validam os requisitos
+5) especificação: desenvolve o projeto de construção do software
+
+requisitos não funcionais: performance, aparência, usabilidade, robustez, confiabilidade. (critérios de qualificação)
+requisito não funcional: tempo de resposta, tipo de fonte, quebras no texto.
+
+fluxo principal
+fluxo alternativo: digitou cpf errado
+fluxo de exceção: um help line (opções não obrigatórias, que são acionadas pelo usuário se quiser)
+
+Um caso de uso tem:
+nome: comprar produto (verbo, objetivo)
+descrição: possibilitar ao cliente a compra de produtos
+pré-condições: cliente ser usuário válido e estar logado
+
+Estórias de usuário
+formato: como/sendo <quem>, eu quero/gostaria/devo/posso <o que>, para que/de/para <por que/resultado>
+Usuário usará o software para fazer o que?
+
+Diagrama de caso de uso
+relação entre as funcionalidades
+
+Diagrama de classes
+
+tipos de relacionamento
+associação
+generalização
+dependência
+
+Passos a serem seguidos:
+- Levantar os requisitos
+- Modelar diagrama de caso de uso
+- descrever os casos de uso
+- Identificar as classes
+- Identificar os atributos e métodos
+- Modelar o diagrama de classes
+
+diagrama de estado
+elementos: objeto, evento, estado, transição
+
+diagrama de atividades
+elementos: estado inicial e final, transição, decisão, bifurcação e união, raias (uma para cada ator), 
+
+diagrama de sequência
+camadas (tela, servidor, banco de dados)
+um diagrama de sequência para cada caso de uso
+
+https://github.com/N-CPUninter/Exemplo_analise_de_requisitos
+
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 
@@ -422,10 +495,91 @@ smallbusiness.withgoogle.com
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
+Visualizacao-de-Dados-e-Storytelling_133375.txt
 
+Objetivos: ser claro, contar uma boa história, levar um bom conteúdo
+conhecer o público e adequar a linguagem (palavras) e *exemplos*
+Selecionar itens e a sequência
+preparar recursos visuais
+ensaiar para obter o tempo certo
+
+castelo da memória: pegar uma região conhecida. Se imaginar passeando por ela. Incluir na paisagem elementos que quer lembrar.
+
+usar a narrativa para acionar respostas emocionais e cognitivas
+
+Interação:
+- perguntas inclusivas (apresentador pergunta)
+- perguntas e respostas (platéia pergunta)
+- incentivo à participação (brindes)
+- interação além do auditório (usar hashtags)
+
+imagem: uma referência (https://babelnet.org/, google images, https://pixabay.com/, https://yandex.com/images/, https://tineye.com/)
+
+não fique parado enquanto fala, fique atento, aprenda sobre seu público e quaisquer fatores logísticos (terá computador, terá datashow, usa linux, etc)
+som da sua voz calma e confiante colocará você e seu público à vontade
+afinação vocal: Ritmo, tom e pausas.
+numa apresentação eficaz, a mensagem é adequada ao público
+o discurso se adapta ao momento, às reações do público
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
+Gerencia-de-Configuracao-e-Evolucao_133376.txt
+
+Necessidades evoluem, software atendem necessidades, então software evoluem.
+
+Criar um software já pensando que será alterado.
+
+O processo de mudança é o mesmo da construção.
+O impacto das mudanças vale a pena?
+
+Como fazer mudança em software sem incluir erros?
+
+Deve implementar rastreabilidade para identificar tudo o que uma mudança afeta.
+rastreabilidade: verifica a interdependência das funcionalidades
+a rastreabilidade nos dá o tamanho da mudança
+
+Matriz de rastreabilidade:
+Uma tabela mostrando que existe relação entre componentes.
+Pode ter as seguintes colunas: requisito, requisito (dependente), Caso de Uso, Classe, Entidade do BD, arquivo de código, caso de teste
+
+refatoração: metodologia XP
+algoritmo com lógica simples, código limpo e fácil de entender
+
+Gerência de configuração: evolução, versões
+
+auditoria de configuração:
+um check list do que deve ser observado para saber o processo foi seguido
+
+baseline: todas as partes do software estão na versão correta para liberar uma versão de teste do software
+release é um pacote pronto para ser entregue ao cliente
+
+cada projeto tem seus próprios itens de configuração, definidos com base na importância do item para o projeto
+
+Quais produtos impactam em versões futuras?
+cronograma não
+plano de projeto sim, por ser entregue para o cliente
+diagrama de classes sim
+histórias de usuário sim
+modelo de dados sim
+código fonte sim
+
+metodologias de desenvolvimento de software: AGILE, XP, RUP
+
+Capacity Maturity Model Integration (CMMI)
+Melhoria de Processo de Software Brasileiro (MPS.Br)
+Rational Unified Process (RUP)
+Software Process Improvement and Capacty Determination (SPICE)
+
+SCRUM o ciclo de tempo de entregas é fixo
+RUP a entrega é regida pelos requisitos, logo, não tem tempo fixo
+
+ciclo de vida do PRODUTO software:
+- introdução (é colocado em produção, ou seja, entregue ao usuário)
+- crescimento (necessidade da gerencia de configuração)
+- maturidade (começa a considerar se melhorias devem ser implementadas)
+- declínío (software é descontinuado)
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
