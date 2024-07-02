@@ -1,0 +1,379 @@
+Requisito não é um desejo.
+Ouve as necessidades do usuário. Entender a necessidade e devolver para o usuário.
+
+Documento de requisitos ou Especificação de requisitos
+
+Dividido em visão do usuário e visão técnica
+
+Vai melhorar minha vida, vai trazer benefícios para mim? Isso deve estar claro para que forneçam informações.
+
+Como posso verificar se foi atendido o requisito
+
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Um processo é uma sequência de passos (ações e agentes)
+
+Aula 1 
+p1
+processos de negócio (o que o software vai automatizar)
+
+mapear (as is) e elaborar (to be)
+
+p2
+Entender como funciona o processo que vai ser automatizado
+
+cada empresa tem seus processos
+papéis e responsabilidades dentro do processo
+
+analista de requisitos está entre a equipe de negócios e a equipe de TI. Traduz os requisitos para linguagem técnica.
+
+p3
+
+processo AS IS
+levantamento, entendimento, documentação da situação atual do processo
+identificar falhas, dificuldades, coisas que podem ser melhoradas
+falar com todos os atores do processo e entender seus papéis (eles serão os usuários)
+
+processo TO BE
+fluxo proposto
+
+p4
+
+BPMN
+Notação de Modelagem de Processo de Negócio
+FIGURA
+retângulo = ação
+losango = decisão (divisão de fluxo)
+tem setas de direção
+tem ponto de entrada (pode ter vários. Por exemplo, inicia pela internet ou presencialmente)
+pode ter vários pontos de saída
+
+p5
+BPMN tem outros elementos que detalham os elementos básicos
+
+desenhar o fluxo do proceso AS IS e do processo TO BE
+fluxos precisam ser aprovados pelos usuários
+
+Outros elementos:
+* Serviço: representa uma tarefa automatizada
+* Recebimento e envio de mensagem
+* Usuário: ação do usuário suportada por software (formulário)
+* Script: ex. script de banco de dados
+
+evento de início (bola azul)
+evento intermediário (amarelo)
+
+tarefa de envio de mensagem: algo feito em um processo por um ator conhecido
+evento de envio de mensagem: ação que são acionadas pelo ambiente externo
+
+p6
+exemplo
+modelo TO BE para loja virtual de livros
+
+
+Aula 1: prática
+software rede social da universidade
+postar vagas de empregos e treinamentos
+disponível para alunos de todos os curso e professores
+encaminhar print para celular
+
+não tem o as is
+
+https://edrawmax.com
+
+Aula 2
+Análise estruturada
+DFD (diagrama de fruxo de dados)
+
+p2
+análise de sistema: melhor caminho lógico para processar informação
+transformas as necessidades do cliente em funcionalidades do software
+métodos de modelagem de sistema:
+- estruturada (entende a funcionalidade como um todo: uma sequência do início ao fim)
+- essencial
+- orientada a objetos (mais usada atualmente)
+
+p3
+Modelagem estruturada
+objetivo: construir modelo lógico
+
+depois que levantou as necessidades do cliente e converteu em funcionalidades, inicia o projeto técnico (acabou a análise)
+gerar documentação seja importante, que agregue valor ao software
+
+p4
+DFD mostra o que o sistema vai fazer e não como vai fazer
+escolha nomes significativos para os componentes. Os nomes devem lembrar como ele funciona e transfere dados
+
+pode construir DFD para cada nível de detalhes
+
+p5
+níveis em DFD
+
+nível zero: nome e departamentos que usarão
+
+p6
+componentes: cliente, estoque
+
+Aula 2 prática
+rede social para anúncio de vagas e cursos
+
+https://edrawmax.com
+buscar modelo de fluxo de dados
+
+detalhar funcionalidades:
+ - entidades
+ - dados trafegados
+
+
+Aula 3
+Engenharia de requisitos
+
+requisitos funcionais e não funcionais
+
+p2
+Engenharia de requisitos transforma processo de negócio em requisitos
+requisitos são as necessidades e o que o software deve fazer para atender essas necessidades
+
+um processo pode passar por vários funcionaríos e setores (exemplo uma nova contratação)
+passos:
+1) concepção: compreender o problema, conhecer o cenário de atuação e as necessidades (fluxo)
+2) levantamento: entender em detalhes as necessidades entrevistando os funcionários (fluxo)
+3) elaboração: organiza as informações ao elaborar um modelo técnico
+4) negociação: os usuários validam os requisitos
+5) especificação: desenvolve o projeto de construção do software
+estávamos na fase de análise dos requisitos, a seguir vem a fase do projeto técnico
+
+ciclo de vida engloba do início ao final da construção de um software
+
+no levantamento procurar conhecer as regras de negócio da empresa. Detalhes específicos da empresa na execução de um processo.
+
+validação: verifica se todos os requisitos necessários foram identificados. Se os requisitos são claros e coerentes (fluxo contínuo).
+
+gestão de requisitos: controle sobre a modificação de requisitos ao longo do tempo.
+
+p3
+requisitos funcionais e não funcionais
+funcionais definem funções
+ao entender um requisito, se escreve a sequência de passos que o processo tem que fazer e então escreve em Português
+
+requisitos não funcionais: performance, aparência, usabilidade, robustez, confiabilidade. (critérios de qualificação)
+
+exemplo:
+processo de recrutamento e seleção
+requisito funcional: gerar relatório com as vagas preenchidas no mês.
+- acesso ao banco de dados
+- listar vagas
+- filtra por data de fim no mês
+requisito não funcional: tempo de resposta, tipo de fonte, quebras no texto.
+
+p4
+Documentação de requisito funcional por meio de caso de uso
+fluxos principais, fluxo alternativo e fluxo de exceção
+
+fluxo alternativo: digitou cpf errado
+fluxo de exceção: um help line (opções não obrigatórias, que são acionadas pelo usuário se quiser)
+
+Um caso de uso tem:
+nome: comprar produto (verbo, objetivo)
+descrição: possibilitar ao cliente a compra de produtos
+pré-condições: cliente ser usuário válido e estar logado
+
+09:45 até 12:45
+fluxo principal:
+1 passo
+2 passo
+3
+
+p5
+Estórias de usuário: metodologia ágil
+
+quebrar a estória em partes menores
+
+formato: como/sendo <quem>, eu quero/gostaria/devo/posso <o que>, para que/de/para <por que/resultado>
+Usuário usará o software para fazer o que?
+
+detalha a funcionalidade, identificando os tipos de acesso ou opções disponíveis para casa usuário
+
+p6
+caso da livraria
+
+Aula 3 prática
+
+UC01 - Acesso ao sistema
+UC02 - Cadastro do usuário
+UC03 - Postar vagas
+UC04 - Postar treinamentos
+UC05 - Consultar postagens
+UC06 - Obter informações sobre postagens
+
+Nome: UC02 - Cadastro do usuário
+Breve descrição: inclue, altera, consulta ou exclui usuário. A exclusão é lógica, mudando o status para inativo.
+Pré-condição: Não pode ter sido incluído antes. Deve estar logado.
+Fluxo principal:
+1 - Usuário informa matrícula
+2 - Sistema verifica se a matrícula contém 6 dígitos
+3 - Se matrícula não tem 6 dígitos, chamar FA01
+4 - Usuário informa senha
+5 - Sistema verifica RN01
+6 - Se senha não ok, chamar FA02
+7 - Usuário informa email
+8 - Se e-mail não possui @, chamar MSG01
+9 - Usuário informa número de celular
+10 - Se número de celular não contém 8 dígitos e não contém número de área, chamar MSG02
+
+Fluxo alternativo:
+FA01 - enviar mensagem "Matrícula inválida"
+       voltar para UC02
+Mensagens: 
+Regra de negócio:
+
+
+Aula 4
+
+a4p2
+UML (Unified Modelling Language)
+Visão estrutural
+Visão comportamental
+
+Elaborar apenas modelos que agregam valor.
+
+a4p3
+orientação a objetos
+objeto: professor, aluno
+abstração: aspectos essenciais, descartar propriedades acidentais. É um objeto contendo apenas as propriedades necessárias naquele caso de uso
+Encapsulamento
+Herança
+
+a4p4
+Diagrama de caso de uso
+Figura em 05:00
+atores, casos de uso
+relação entre as funcionalidades
+
+a4p5
+Componentes de um diagrama de caso de uso
+Ator
+Relacionamentos (generalização (herança), include (caso de uso A para caso de uso B, então B é essencial para A), extend (é chamado apenas em alguns casos))
+include => matricula chamar verificar matrícula
+
+a4p6
+aplicação na loja virtual de livros
+
+imagem de um diagrama de casos de uso em 02:40
+
+
+Aula 4 prática
+UML
+diagrama de casos de uso
+
+
+Aula 5
+Diagrama de classes
+
+a5p2
+identificar as classes: professor, aluno, curso
+
+imagem em 08:55
+
+a5p3
+reforço dos elementos de um diagrama de classes
+
+atributos: tipo
+métodos
+
++ público
+# protegido
+- privado
+
+a5p4
+relacionamentos
+imagem em 03:00  
+				     trabalha para > 
+pessoa 1..* ------------------------------------* empresa
+    empregado     tipo associação           empregador
+
+nome
+multiplicidade
+sentido
+papel (pode mudar de um relacionamento para outro) (estudante jogador)
+
+tipos de relacionamento
+associação
+generalização
+dependência
+
+a5p5
+
+Passos a serem seguidos:
+- Levantar os requisitos
+- Modelar diagrama de caso de uso
+- descrever os casos de uso
+- Identificar as classes
+- Identificar os atributos e métodos
+- Modelar o diagrama de classes
+ imagem de diagrama de classes em 07:00 
+
+a5p6
+listou casos de uso para venda de livros
+
+
+Aula 5 prática: diagrama de classes
+UML
+Orientação à objetos
+Entidade: usuário, vaga, treinamento
+Encapsulamento
+
+https://edrawmax.com
+
+classe: usuário
+atributos:
+  matrícula : Num
+  email : String
+  senha : String
+  celular : Num
+  Status : Text
+métodos
+  incluir()
+  consultar(matrícula)
+  alterar()
+  excluir()
+
+Ligar classes
+classe isolada (cursos)
+
+Aula 6
+a6p2
+diagrama de estado
+elementos: objeto, evento, estado, transição
+
+a6p3
+diagrama de atividades
+elementos: estado inicial e final, transição, decisão, bifurcação e união, raias (uma para cada ator), 
+
+a6p4
+diagrama de sequência
+camadas (tela, servidor, banco de dados)
+imagem 07:15
+
+um diagrama de sequência para cada caso de uso
+
+a6p5
+diagrama de componente
+https://www.omg.org/spec/UML/2.5.1/PDF
+
+a6p6
+livraria: componentes: cliente
+imagem em 02:15
+
+Aula 6 prática: diagramas complementares
+diagrama de estado
+diferentes estados de um pedido em um e-commerce
+
+diagrama de componente
+1 visual
+2 negócio (servidor)
+3 persistência (base de dados)
+
+https://github.com/N-CPUninter/Exemplo_analise_de_requisitos
+
