@@ -1,0 +1,358 @@
+A01
+Com o passar do tempo mudam os requisitos e preferências dos usuários, por isso é necessário gerencia de evolução e configuração.
+
+A01_P02
+Mudança em software sem inserir erros
+
+a manutenção consome 75% do custo do software
+
+precisa manter o histórico das versões
+
+mudança:
+  - corretiva: muda o código (algo não funcionava bem)
+  - evolutiva: inclui requisitos ou altera existentes (nova lei, nova forma de pagamento)
+
+
+A01_P02
+Gerência de configuração: evolução, versões
+Gerência de mudança: o que foi alterado
+MPS.Br
+
+A01_P03
+manutenção faz parte do ciclo de vida do software
+
+A01_P04
+pilares da gerência de configuração:
+  - controle de versão
+  - controle de mudanças
+  - integração contínua (copiar o trabalho para o servidor)
+
+A01_P05
+Existem muitas profissões em TI
+
+Analista de configuração
+baseline: todas as partes do software estão na versão correta para liberar uma versão de teste do software
+
+DevOps: segurança, integração de equipes
+cuida de todas as etapas: desenvolvimento, manutenção, etc
+
+A01_P06
+item de configuração:
+- banco de dados
+
+cada projeto tem seus próprios itens de configuração, definidos com base na importância do item para o projeto
+
+A07
+Produto de trabalho: qualquer documento produzido
+Modelo de Melhoria de Software
+
+é preciso ter regras sobre quais produtos devem ser tratados como item de configuração.
+quais produtos de trabalho precisam ser controlados formalmente. Quais impactam em versões futuras.
+
+Para um projeto de software com os seguintes produtos de trabalho:
+cronograma não
+plano de projeto sim, por ser entregue para o cliente
+diagrama de classes sim
+histórias de usuário sim
+modelo de dados sim
+código fonte sim
+
+A02_P01
+
+objetivo: evitar retrabalho
+conforme as telas vão sendo apresentadas, o sofware para a ficar claro, sua funcionalidade para a ser vista e pode ser melhorada
+
+gerência de configuração auxilia na qualidade do software.
+
+Um modelo não diz como construir um software, mas o que fazer para ter um sofware bem construído
+Capacity Maturity Model Integration (CMMI)
+Melhoria de Processo de Software Brasileiro (MPS.Br)
+Rational Unified Process (RUP)
+Software Process Improvement and Capacty Determination (SPICE)
+
+A02-P02
+CMMI (mais antigo, o primeiro)
+29 práticas
+níveis
+  - básica
+
+Áreas
+Garantia de qualidade (ENQ)
+ - desenvolvimento e gestão de requisitos (RDM)
+ - garantia de qualidade do processo (PQA)
+ - verificação e validação (VV)
+ - revisão por pares (PR)
+
+Engenharia e desenvolvimento de produtos (EDP)
+ - soluçao técnica (TS)
+ - integração do produto (PI)
+
+Prestação e gestão de serviços (DMS)
+ - gestão da prestação de serviços (SDM)
+ - gestão estratégica de serviços (STSM)
+
+Seleção e gestão de fornecedores (SMS)
+ - seleção de fornecedor (SSS)
+ - gestão de contrato de fornecedor (SAM)
+
+Planejamento e gestão do trabalho (PMW)
+ - estimativa (EST)
+ - planejamento (PLAN)
+ - monitoramento e controle (MC)
+
+Gestão da resiliência dos negócios (MBR)
+ - gestão de riscos e oportunidades (RSK)
+ - solução e prevenção de incidentes (IRP)
+ - continuidade (CONT)
+
+Gestão de força de trabalho
+.
+.
+.
+
+pensar em qualidade e boas práticas, mas sem perder a produtividade
+
+A02-P03
+MPS.Br
+
+ISO 12.207:2009
+
+sete níveis de G a A
+
+A02-P04
+RUP
+É uma metodologia
+tem ferramentas e boas práticas
+Fases: iniciação, elaboração, construção e transição
+em cada fase tem várias interações (entregas)
+tem várias disciplinas
+gráfico de baleias
+
+SPICE
+foi transformado na ISO 15.504 que estabelece o passo a passo para desenvolvimento de software.
+
+vai do menor nível de maturidade para o maior, aumentando os resultados (eficácia, eficiência e satisfação)
+
+seis níveis
+incompleto, executado, gerenciado, estabelecido, previsível e otimizado
+os últimos dependem do modelo adotado pela empresa.
+
+A02-P05
+gerência de configuração
+para produtos de trabalho selecionados, formar baseline
+
+versionamento: permite várias altereções sumultaneamente
+mudança: armazena histórico
+
+comunica as alterações para todos os envolvidos
+tirar do ar o software para atualização
+
+Resultados esperados
+GSO1: define o processo a ser seguido
+GSO2: define quais itens de configuração terá gerencia de configuração
+GSO3: define baselines com os itens de configuração
+GSO4: define o histórico dos itens
+GSO5: controla modificações nos itens (gestão de mudança)
+GSO6: armazenamento, manuseio e liberação de baselines
+GSO7: auditoria dos itens
+
+A02-P06
+comitê de mudança
+composto por profissionais de várias áreas de produção
+
+mudanças agregam riscos
+
+A08
+MPS.Br
+GCO - gerência de configuração
+
+deve estabelecer um processo para produção de software
+o passo a passo deve estar documentado no plano de gerência de configuração
+
+baseline é um pacote ainda em desenvolvimento
+release é um pacote pronto para ser entregue ao cliente
+
+plano de gerência de configuração:
+lista de produtos de trabalho
+localização dos produtos de trabalho
+nome do projeto
+itens de configuração
+baselines
+auditorias
+ferramentas utilizadas
+
+Produtos de trabalho:
+cronograma
+plano de projeto
+diagrama de classes
+histórico de usuários
+modelo de dados
+código fonte
+
+boa prática: criar pastas com nomes claros
+
+é crítico para a evolução?
+é crítico para os para as necessidades do negócio?
+é crítico para definição técnica?
+
+baselines:
+requisitos
+diagrama de classes
+modelo de dados
+código fonte
+
+auditoria de configuração:
+um check list do que deve ser observado para saber o processo foi seguido
+
+
+A03-P01
+gerenciamento de mudanças:
+controle de criação e alteração
+
+A03-P02
+mudanças no software
+
+- mudanças adaptativas
+  - lgpd
+
+- mudanças evolutivas
+  - novos requisitos
+  - pix
+
+A03-P03
+gerenciamento de mudanças
+
+o processo de mudança é o mesmo da construção
+tem que fazer gerência de configuração, requisitos e projeto
+
+A03-P04
+Tipos de mudanças: planejadas ou emergencial
+
+planejada segue fluxo normal, é planejada, minimiza riscos.
+emergencial implica na indisponibilidade do serviço, não é prevista, não precisa ser definitiva.
+busca restabelecer o serviço, depois faz uma mudança planejada para resolver a causa do problema.
+
+A03-P05
+impacto das mudanças vale a pena
+
+rastreabilidade: verifica a interdependência das funcionalidades
+a rastreabilidade nos dá o tamanho da mudança
+
+mastriz de rastreabilidade
+
+A03-P06
+GMUD - Gestão de mudanças
+
+esquema de fluxo de mudança em 5 fases
+
+A09
+MPS-Br
+
+A04-P01
+Controle de versionamento
+
+A04-P02
+Artefatos de projeto ou produtos de trabalho
+toda etapa gera documentos
+guardar documentos que ajudam a entender o software
+
+A04-P03
+controle de versão
+
+integração contínua: diariamente salvar o trabalho em um servidor
+
+A04-P04
+sistema de controle de versão
+
+controle de versão distribuído: cada desenvolvedor também tem seu próprio reservatório
+
+A04-P05
+baseline, branch
+ramificação principal, dedicada e de manutenção
+
+A04-P06
+gerência de mudança de arquivos
+
+A10
+github
+
+A05-P01
+Ciclo de vida do software
+
+gerencia de configuração durante desenvolvimento e manutenção
+
+A05-P02
+O que é a lei de Lehman
+
+necessidades evoluem, software atendem necessidades, então software evoluem.
+
+criar um software já pensando será alterado. Pensar no futuro.
+
+A05-P03
+1 - mudança contínua
+2 - complexidade crescente, deve refatorar para simplificar a lógica
+3 - autorregulação. Trocar pessoas não é perceptível 
+4 - conservação da estabilidade organizacional. Evolução mantém a estabilidade
+5 - conservação de familiaridade. Senão se torna um novo software. Versão mobile de software.
+6 - crescimento contínuo. Mais funcionalidades. Reajustes.
+7 - qualidade diminuindo. Com a evolução, a qualidade tende a diminuir. Deve implementar rastreabilidade para identificar tudo o que uma mudança afeta.
+8 - sistema de feedback. Deve analisar o custo benefício das mudanças.
+
+A05-P04
+Etapas do ciclo de vida do software
+metodologias de desenvolvimento de software: AGILE, XP, RUP
+
+ciclo de vida do PRODUTO software
+introdução (é colocado em produção, ou seja, entregue ao usuário), crescimento (necessidade da gerencia de configuração), maturidade (começa a considerar se melhorias devem ser implementadas), declínío (software é descontinuado)
+
+A05-P05
+envelhecimento e rejuvelhecimento
+envelhecimento: atualização de hardware, acúmulo de erros, falta de integridade de dados, memória inchada.
+
+rejuvelhecimento: reinstalar o software.
+
+A05-P06
+evolução do hardware impulsiona a evolução do software
+hardware, conectividade, IA, nuvem, sensores
+
+A11
+gerência de mudança
+
+A06-P01
+
+O objetivo da gerência de configuração é a segurança e a estabilidade do software
+
+A06-P02
+Processo de evolução
+Precisa saber qual é o momento que uma mudança impacta menos usuários
+
+A06-P03
+Sistemas legados: são sistemas imprescindíveis para uma empresa
+
+Uma empresa pode ter vários sistemas, vários softwares
+
+desafios do sistema legado:
+recursos lentos, bugs, ausências de funcionalidades, software desatualizado, falta de mobilidade (versão mobile), falta de escabilidade (aumento de usuários, fazer teste de volume), falta de suporte (ficamos reféns das APIs, ex. maps), servidor físico
+
+A06-P04
+Riscos de substituição de software
+Manter backup
+
+A06-P05
+Reengenharia de software
+diferente de engenharia reversa
+
+o custo da reengenharia é menor que construir um software novo
+
+A06-P06
+Refatoração de software
+baseado em Lehman e metodologia XP
+
+código limpo e fácil de ser entendido
+
+precisa ser um ganho para a qualidade do software
+
+A12
+SCRUM o ciclo de tempo de entregas é fixo
+RUP a entrega é regida pelos requisitos, logo, não tem tempo fixo
+
