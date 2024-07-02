@@ -245,5 +245,52 @@ Instalou
 MongoDB
 Instalou
 
+A04-P01
+Sumário
+
+Arquitetura Lambda
+Ferramentas: Kafka, Flume, Storm, Flink
+
+A04-P02
+Processamento de fluxo de dados distribuídos
+
+baixa latência: o processamento é mais rápido que velocidade de entrada de dados
+
+Arquitetura Lambda
+- Batch layer: armazena e pré-processa
+- Serving layer: disponibiliza os dados da camada anterior
+- Speed layer: processa cada dado. Realtime View
+
+A04-P03
+Kafka
+
+uma fila de mensagens, um buffer. Baixa latência.
+publicação e inscrição, como o dbus no linux
+
+produtor: cria tópico e publica eventos nele
+consumidores: se increvem em tópicos
+
+também é usado para processamento de dados
+um evento publicado pode ter tempo de duração, ou seja, quanto tempo o Kafka vai guardá-lo esperando clientes
+
+A04-P04
+Flume
+Processamento em tempo real
+
+geradores de dados > source > channel > sink (destino) > armazenamento
+
+unidade de dado: evento
+
+
+A04-P05
+
+A04-P06
+
+A10
+
+
+A05-P01
+A11
+
 
 
