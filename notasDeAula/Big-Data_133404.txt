@@ -281,16 +281,87 @@ geradores de dados > source > channel > sink (destino) > armazenamento
 
 unidade de dado: evento
 
+11:39 comando flume-ng
 
 A04-P05
+Storm
+sistema de computação distribuída em tempo real
+
+arquitetura mestre-trabalhador
+
+Nimbus gerencia os trabalhadores
+
+Spout: entrada de dados
+Bolt: processamento e entrega
+
+um bolt pode entregar dados para outro bolt
+
+cada bolt pode executar várias tarefas ao mesmo tempo, que podem ser agrupadas
+All grouping: os dados são replicados para todas as tarefas
+None grouping ou Shuffle grouping: dados são distribuidos aleatóriamente para as tarefas
+Fields grouping: um campo no dado diz qual tarefa vai processá-lo
+Direct grouping: a origem do dado define qual tarefa vai processá-lo
+
+Zookeeper gerencia os Nimbus e os processos trabalhadores. Se um parar de funcionar ele ativa outro.
 
 A04-P06
+Flink
+processamento de fluxos distribuídos
+
+fluxo ilimitados ou limitados.
+ilimitado não tem fim determinado
+
+comunicação em protocolo REST
+
+Fluxos, estados e tempo
+
+fluxo é uma entrada de dado
+estado informações armazenada entre eventos
+tempo instante em que um evento é criado
+
+APIs
+Process functions: controla estados e tempos
+DataStream: processamento usando MapReduce e ..Data 
+SQL table: consulta sql
 
 A10
+Ferramentas: Kafka, Flume, Storm, Flink
 
+Kafka
+Publish/subscribe
+comandos
+Exemplo: separa palavras e conta
+
+Flume
+source/channel/sync
+comandos
+Exemplo de log
+
+Storm
+executa sobre o YARN
+stream/Spouts/Bolts
+comandos
+exemplo de contagem de palavras
+
+Flink
+Se conecta a vários sistemas de arquivos e banco de dados: HDFS, Cassandra, Kafka, Redis, Elasticsearch ...
+comandos
+exemplo de contagem de palavras
 
 A05-P01
+Spark
+
+A05-P02
+A05-P03
+A05-P04
+A05-P05
+A05-P06
+
 A11
+
+A06-P01
+
+A12
 
 
 
