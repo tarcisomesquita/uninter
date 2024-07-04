@@ -350,12 +350,52 @@ exemplo de contagem de palavras
 
 A05-P01
 Spark
+Sumário dos módulos
 
 A05-P02
+Spark Core
+Computação em cluster
+
+driver program > gerenciador de cluster (spark, YARN, ...) -<- Nó trabalhador (executor, cache, [tarefa, ...])
+
+RDD (resilient distributed dataset)
+armazena os dados referente à distribuição
+mantém cópias em outros nós para resistência à partição
+
+transformações RDD
+  map
+  flatmap
+  filter
+  ...
+
+Ações RDD
+  reduce
+  collect
+  take
+  ...
+
 A05-P03
+Spark SQL
+
+suporte ao hive
+structured stream
+
+fonte de dados:
+- parquet
+- JSON
+- ORC
+- CSV
+- LibVSM
+- JDBC
+
 A05-P04
+MLLib (machine learning)
+
 A05-P05
+Spark Streaming
+
 A05-P06
+GraphX (grafos)
 
 A11
 
