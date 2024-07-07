@@ -389,17 +389,82 @@ fonte de dados:
 - JDBC
 
 A05-P04
-MLLib (machine learning)
+Spark Streaming
+
+Kafka, flume, Kinesis, Sockets TCP
+HDFS
+Map, reduce
+
+divide em lotes os dados rebidos em stream, e os processa
+Usa RDD para gerenciar
+
+exemplo que separa palavras
+comandos
 
 A05-P05
-Spark Streaming
+MLLib (machine learning)
+
+aprendizado supervisionado: no treinamento já inclui as respostas corretas
+aprendizado não supervisionado: não tem as respostas corretas no treinamento
+aprendizado por reforço: recebe reforço para acertos e recebe punição para resposta errada.
+
+pipeline: preparação dos dados > transformadores (formato correto) > Estimadores (qual modelo adequado) > avaliador (testa o modelo)
 
 A05-P06
 GraphX (grafos)
 
+extensão de RDD
+
+algoritmos conhecidos:
+pageRank: criado pelo google que atribui relevancia a um nó
+Triangle: identifica os vértices com maiores relações entre si. Identifica grupos
+Connected components: componentes pertencentes a uma rede de computadores
+
+usa grafo de propriedades
+
+tem tabela de vértices e tabela de arestas
+
+vértices
+id, propriedade
+3,(Rafael, estudante)
+7,(João, Pós-doutorando)
+5,(Fernando, Professor)
+2,(Ingrid, Professor)
+
+arestas
+srcId, dstId, propriedade
+3,7,colaborador
+5,3,orientador
+2,5,colega
+5,7,pesquisador
+
 A11
+SPARK
+
+contagem de avaliação de filmes
+comandos
+
+soma de comandas
+comandos
+
+encontrar o filme mais popular
+explica o esquema
+comandos
+
+Spark SQL
+comandos sql
 
 A06-P01
+sumário
+
+A06-P02
+
+
+
+A06-P03
+A06-P04
+A06-P05
+A06-P06
 
 A12
 
