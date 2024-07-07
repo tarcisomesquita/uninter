@@ -458,15 +458,115 @@ A06-P01
 sumário
 
 A06-P02
+Outros módulo hadoop
 
+Impala
+Voltado para BI
 
+Accumulo
+BigTable (chave-valor)
+segurança
+
+Redis
+In-memorian storage
+
+Ignite
+cache+storage
+ACID + SQL
+
+NiFi
+grafos dirigidos
+
+Ambari
+Interface web
+gerencia os módulos hadoop
+Interface principal do pacote hadoop
+
+divide os módulos em:
+- core hadoop (hdfs, mapreduce, yarn)
+- essential hadoop (hive, pig, tez)
+- hadoop support
 
 A06-P03
+Data Lake (lago)
+Uma estratégia de gerenciamento de dados
+
+Outras estratégias
+Data Warehouse
+Data Mart (loja de garrafa de água)
+
+Data Swamp (pântano)
+dados degradados, não são mais úteis
+
+Níveis de maturidade (Puddle (poça, atende a um pequeno grupo), Pond (lagoa), Lake (lago), Ocean )
+
 A06-P04
+Sistemas de recomendação
+
+calda longa
+itens versus populariadade
+
+Tipos de recomendação
+- Editorial ou curadoria (um humano faz uma lista dos produtos mais vendidos, ou os melhores)
+- Agregação simple (usa um critério para fazer automaticamente um top 10)
+- Recomendador individualizado (tenta prever o que o usuário precisa)
+
+content-based recommendation system (conta a interação do usuário com o conteúdo)
+collaborative filtering (compara usuários)
+
+matriz de consumidores versus itens, contendo as notas dos consumidores para avaliação dos itens
+
+probalidade de um usuário avaliar positivamente um item de uma categoria onde o usuário já avaliou positivamente outro item.
+precisa de uma lista das características dos itens.
+
+mostra cálculo de comparação de usuários
+
 A06-P05
+Cloud computing
+
+Amazon Elastic MapReduce
+IaaS + PaaS
+Spark, Hive, HBase, Flink, Presto, etc
+
+Google Cloud Dataproc
+IaaS + PaaS
+Hive, HBase, Presto, Zeppelin, Zookeeper, Pig, etc
+
+Armazenamento
+BigQuery, Cloud Storage, Cloud BigTable
+
+Microsoft Azure
+IaaS + PaaS
+
 A06-P06
+Design arquitetura Big Data
+como combinar componentes
+
+conhecer os componentes e as necessidades do usuário.
+o que achamos que precisa, o que o usuário diz que precisa, o que ele realmente precisa
+
+avaliar a experiência do usuário
+
+Working Backwards
+Divulga um produto antes de desenvolvê-lo.
+A partir das críticas, decide o que fazer, escreve os requisitos.
+
+Requisitos de armazenamento
+segurança
 
 A12
+Spark streaming
+structured streaming
+MLlib
 
+Spark streaming
+exemplo de análise de log
+combinou spark e flume para entregar uma estatística atualizada dos logs.
 
+Spark streaming
+análise usando dataframes
 
+MLlib
+recomendador de filmes
+algoritmo
+execução
