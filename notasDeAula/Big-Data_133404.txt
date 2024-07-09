@@ -33,7 +33,7 @@ MapReduce (processamento distribuido)
 
 baixa latência, consistência, alta disponibilidade
 
-spark core: MapReduce
+spark core: Mappers e Reducers que susbstituem o MapReduce
 GraphX: processamento de grafos
 Spark SQL: 
 MLib: machine learning
@@ -85,10 +85,10 @@ tolerância a partição
 
 blocos de 128 MiB são replicados
 
-data node, name node (nome dos arquivos, quais nodes tem réplica)
+data node, name node (nome dos arquivos e quais data nodes tem réplica)
 um client node, um name node, vários data node
-
-esquema de escrita de arquivos
+client node solicita leitura ao name node, o client node lê os dados nos data node
+client node solicita escrita ao name node, o client node escreve os dados em um data node, este replica em outros data node e retorna ao cliente node, que repassa ao name node.
 
 A02-P04
 MapReduce
@@ -101,7 +101,7 @@ A02-P05
 Alternativas ao MapReducer
 MapReduce é dificil fazer SQL
 
-Pig é muito semelhante ao SQL, o Pig Latin, ainda usa o MapReduce
+Pig é muito semelhante ao SQL, o script Pig Latin, ainda usa o MapReduce
 relação > tabela
 tupla > registro (linha)
 campo > coluna
@@ -109,13 +109,16 @@ campo > coluna
 tem join
 
 Tez, substitui totalmente o MapReduce
-usa grafos acíclicos e lê menos o FDFS
+usa grafos acíclicos e lê menos o HDFS
+
+Em vez de usar o MapReduce, pode usar o Tez ou Spark.
+Tem CLI chamada Grunt
 
 A02-P06
 Gerenciamento de cluster
 YARN
 
-premeira versão do hadoop tinha apenas os módulos MapReduce e HDFS. Depois acrescentaram o YARN antes do MapReduce.
+primeira versão do hadoop tinha apenas os módulos MapReduce e HDFS. Depois acrescentaram o YARN antes do MapReduce.
 
 é um gerenciador de recursos no nó mestre. Ele distribui trabalho para os demais nós.
 
@@ -152,13 +155,19 @@ Banco de dados
 Sumário
 
 A03-P02
-Hive
-Faz consultas
+Hive é um framework do Hadoop para fazer consultas no HDFS
 
-HiveQL
+muito usado para fazer BI (aplicações que fazem consulta SQL)
+
+HiveQL (implementa SQL parcialmente)
+
 Opera em MapReduce ou Tez
 
 schema on read
+
+Arquitetura tem dois módulos: Driver e Master
+o Driver compila e executa e repassa ao Master
+o Master gerencia as tarefas repassando para os nós trabalhadores
 
 A03-P03
 Integração a banco de dados relacionais: Sqoop
@@ -180,9 +189,9 @@ SGBD: HBase
 A03-P05
 NoSQL externo
 
-Cassandra
+Cassandra (chave-valor)
 Linguagem CQL
-Suporta ACID
+Suporta ACID parcialmente (sem join, chave estrangeira, integridade referencial) (consistência eventual)
 Não tem JOIN
 Não tem chave estrangeira
 Nós distribuidos em forma de anel, sem mestre.
@@ -395,7 +404,7 @@ Kafka, flume, Kinesis, Sockets TCP
 HDFS
 Map, reduce
 
-divide em lotes os dados rebidos em stream, e os processa
+divide em lotes os dados rebidos em stream (DStream), e os processa
 Usa RDD para gerenciar
 
 exemplo que separa palavras
