@@ -2,6 +2,17 @@
 univirtus > avaliações > agendar
 inicia dia 07 antes do período de provas
 
+AVA > Serviços > Solicitação de serviços > selecione o seu curso > CANCELAMENTO DE MATRÍCULA.
+multa de 10% do valor da mensalidade
+Próxima mensalidade vence em 10/10/2024
+
+0800 727 0530
+WhatsApp (41) 2104-2791, de segunda a sexta-feira das 09h às 20h.
+
+DESEMPENHO > GRADE
+Arquitetura de Sistemas
+Computação em Nuvem
+
 https://univirtus.uninter.com
 BACHARELADO EM ENGENHARIA DE SOFTWARE - DISTÂNCIA (6270)
 turma 2022/12
@@ -28,9 +39,8 @@ Recuperação – Exame, Recuperação de Conceito Paga e Regime Tutorial. Nota 
 Outros alunos/repositórios
 https://github.com/N-CPUninter
 https://github.com/CarolFenixBr/UNINTER
-https://github.com/CarolFenixBr/Atividade-pratica-Big-Data
+https://github.com/CarolFenixBr/Atividade-pratica-Big-Data/
 https://github.com/SkyArtur/TrabalhoBancoDeDadosRelacionais
-https://github.com/leonamcassemir0/software-engineer
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
