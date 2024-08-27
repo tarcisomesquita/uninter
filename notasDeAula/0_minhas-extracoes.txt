@@ -4,27 +4,9 @@ https://univirtus.uninter.com
 BACHARELADO EM ENGENHARIA DE SOFTWARE - DISTÂNCIA (6270)
 matrícula: 4320512
 
-cada ano letivo tem 3 módulos: A, B e C.
-cada módulo tem duas fases: I e II.
-cada fase tem 2 disciplinas
-Avaliações: 2 APOL (30%), 1 prova objetiva (30%), 1 atividade prática ou prova discursiva (40%).
-Nota de aprovação: 70%
-
-Preparação – APOL
-Período Regular – Prova Objetiva, Prova Discursiva e Segunda Chamada (caso tenha perdido uma prova ou queira melhorar sua nota)
-Recuperação – Exame, Recuperação de Conceito Paga e Regime Tutorial. Nota de aprovação: 50%.
-
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Outros alunos/repositórios
-https://github.com/N-CPUninter
-https://github.com/CarolFenixBr/UNINTER
-https://github.com/CarolFenixBr/Atividade-pratica-Big-Data/
-https://github.com/SkyArtur/TrabalhoBancoDeDadosRelacionais
-
- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-Fundamentos-de-desenvolvimento-de-softwares_133360.txt
+Fundamentos-de-desenvolvimento-de-softwares
 
 Se não tem tempo para a engenharia de software, terá tempo para refazer o software?
 
@@ -37,7 +19,7 @@ Atributos da qualidade do software:
 	desempenho (rápido)
 	fácil de manter
 
-Engenheiro de Software não é programador, assim como um engenheiro civil não é um pedreiro.
+Um engenheiro de software não é um programador, assim como um engenheiro civil não é um pedreiro.
 
 Engenheiro de Software escolhe os processos, as fases e avalia o desenvolvimento.
 Analista: compreensão do problema, levantamento de requisitos e modelagem
@@ -110,6 +92,24 @@ paragrafo.addEventListener("click", trocaTexto);
 function trocaTexto() {
   paragrafo.style.backgroud = "red";
 }
+
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+tempo de acesso: L1 tem 5 ns, L2 tem 15 ns e RAM tem 100 ns
+razão de falha: L1 tem 10% e L2 tem 20%
+
+Tempo de acesso médio: 5 ns * 100% + 15 ns * 20% + 100 ns * (20% * 10%) = 10 ns
+
+mais variáveis locais que globais gera menor razão de falha e o programa roda mais rápido
+
+concorrência entre programas
+	interrupção (está usando um aplicativo e entra uma ligação)
+	exceção: gerada pelo software
+	controladores (E/S, ponte norte e sul)
+	buffering: gravação em disco, libera memória
+	spooling: buffer de impressão
+	reentrância: quando abre várias abas no navegador, reaproveita a imagem carregada.
+
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
@@ -341,21 +341,8 @@ ilustração: empresa x fez
 
 Oratória
 
-Você faz as coisas acontecerem. Quanto está se esforçando?
-
-A oratória melhora os relacionamentos interpessoais.
-
-Pausa na fala. Inclinação do corpo. Repete trechos.
-
-Cortela: Faça o seu melhor nas condições que você tem. Não seja medíocre. Se esforce para ir além do que pode atualmente.
-Qual é a vida que você leva?
-
-Quando estiver com público pequeno, modere sua gesticulação. Relaxe os ombros, os cotovelos e o pescoço. Mantenha a coluna reta e o olhar atento ao público.
-
 Em vez de falar para a platéia, falar para a internet. É onde compartilham. Não passar de 1 minuto.
 Interagir a cada 1 minuto.
-
-Ser assertivo é fazer com que o outro entenda a mensagem.
 
 Fale calmamente, fazendo breves pausas de uma frase para a outra. É fundamental planejar o discurso e o ritmo.
 
@@ -380,7 +367,7 @@ estruturado: modelo predefinido, tabela
 semi-estruturado: usa tags como separadores, JSON
 não estruturados: audio, videos, fotos
 
-tríade segurança da informação = { disponibilidade, integridade, confidenciabilidade}
+tríade segurança da informação = { disponibilidade, integridade, confidenciabilidade }
 
 SEO
 
@@ -398,15 +385,13 @@ site responsivo: se ajusta à telas diferentes
 
 smallbusiness.withgoogle.com
 
-Nosso trabalho é conhecer os recursos disponíveis
-
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 Logica-de-Programacao-e-Algoritmos_133365.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Analise-e-Modelagem-de-Sistemas_133370.txt
+Analise-e-Modelagem-de-Sistemas
 
 Ouve as necessidades do usuário. Entender a necessidade e devolver para o usuário.
 Vai melhorar minha vida, vai trazer benefícios para mim? Isso deve estar claro para que forneçam informações.
@@ -513,7 +498,7 @@ Pre-Calculo_133373.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Visualizacao-de-Dados-e-Storytelling_133375.txt
+Visualizacao-de-Dados-e-Storytelling
 
 Objetivos: ser claro, contar uma boa história, levar um bom conteúdo
 conhecer o público e adequar a linguagem (palavras) e *exemplos*
@@ -541,7 +526,7 @@ o discurso se adapta ao momento, às reações do público
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Gerencia-de-Configuracao-e-Evolucao_133376.txt
+Gerencia-de-Configuracao-e-Evolucao
 
 Necessidades evoluem, software atendem necessidades, então software evoluem.
 
@@ -610,13 +595,3 @@ Sistema-Gerenciador-de-Banco-de-Dados_133379.txt
 Big-Data_133404.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-
- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-
- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-
- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
