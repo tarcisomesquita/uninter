@@ -490,9 +490,68 @@ Engenharia-de-Software_133369.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Interface-Humano-Computador_133371.txt
+Interface-Humano-Computador_133371
 
+Ferramentas para fazer protótipo de página da web
+https://wireflow.co/
+https://jdittrich.github.io/quickMockup/
 
+desenvolvemos sistemas que server para auxiliar as pessoas
+
+Lei de Fitts: tempo gasto para mover o mouse. 15 cm > 0,2 s
+
+design para o prazer
+psicoprazer: eu consegui!
+ideoprazer: independência, liberdade, criatividade
+
+https://premotool.com
+premo: 14 emoções
+7 positivas   7 negativas
+inspiração    indignação
+desejo        repugnância
+satisfação    insastifação
+agradável     desagradável
+fascinação    desapontamento
+divertimento  tédio
+admiração     desprezo
+
+pleasant surprise    unpleasant surprise
+satisfaction         dissatisfaction
+admiration           contempt
+desire               disgust
+amusement            boredom
+fascination          disappointment
+inspiration          indignation
+
+um like tem mais valor que uma propaganda boca a boca
+
+velocidade de acesso é uma das grandes insatisfações
+
+princípios de usabilidade:
+- aprendabilidade (visibilidade, consistência, familiaridade, e affordance)
+- efetividade (navegação, controle, retorno, recuperação, restrição)
+- acomodação (flexibilidade, estilo, sociabilidade)
+
+que o usuário consiga usar sem precisar de um treinamento
+
+avaliação é um processo constante
+
+https://mobiletest.me
+https://validador.w3.org
+
+acessibilidade: remoção de barreira para algumas pessoas
+usabilidade: tempo gasto na tarefa, quantidade de erros cometidos, tempo para aprender a usar
+aceitabilidade: adequação ao propósito, gosto
+
+uso simples e intuitivo: poucas funções
+não espere que as pessoas guardem muita coisa na memória
+eficiência (mínimo esforço), eficácia (organizado), facilidade (aprendizagem), segurança, alta utilidade
+
+Aceitabilidade: não tem como prever
+
+retorno para que as pessoas percebam o efeito de suas ações
+recuperação: conseguir se livrar de enganos
+restrições: impedir que as pessoas cometam erro. Confirmação para ações perigosas
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
