@@ -679,3 +679,262 @@ Sistema-Gerenciador-de-Banco-de-Dados_133379.txt
 Big-Data_133404.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Aplicacoes-Web-e-Moveis
+
+programador recebe um protótipo
+
+Tim Bernard Lee, em 1990, desenvolveu o HTML.
+Berners-Lee (citado por Chagas, 2014) afirmava: "Gostei da ideia de que uma informação é realmente definida apenas pelo que está relacionada e como está relacionada. Realmente há pouco mais para o significado. A estrutura é tudo".
+
+box-sizing: border-box; /* faz caber na tela*/
+
+float: left | rigth | none | inherit
+
+elementos block: main, div, h[1-6], p, pre, ul, ol, li, table, form, ...
+block: dois seguidos aparecem um abaixo do outro
+
+elementos inline: a, b, i, span, br, img, input, sup, sub, textarea, code, object, 
+inline: dois seguidos aparecem um do lado do outro
+
+usar lista para fazer menu
+ul, li { display: inline}
+list-style-type: none
+text-decoration: none
+
+Menu vertical
+li, a {display: block}
+submenu é uma lista dentro de outra
+position: absolute; display: none
+horizontal
+li {float:left}
+
+
+<section style="clear: both">
+
+Seletores de tag
+E F = Elemento F descendente do
+elemento E 
+E > F = Elemento F filho do elemento E
+E + F = Elemento F imediatamente após
+E (irmãos) 
+E ~ F = Elemento F após elemento E
+(irmãos)
+E:firstchild = Elemento E primeiro-filho do seu
+elemento-pai
+E:lastchild
+
+selector:pseudo-class { color:red}
+
+pseudo-class = :link | :visited | :hover ...
+manter a ordem
+? :hover mudar a cor do fundo para mostrar validação
+
+pseudo-elementos
+::after | ::before | ::first-letter | ::first-line | ::maker | ::selection
+Usado para fonte, background
+
+maker: item de lista
+selection: quando selecionar o texto
+
+img {
+  border-radius: 50%;
+  opacity: 0.5;
+  display: block; margin: auto; // centraliza
+}
+
+seletor {transform: translateX(x); translate(x,y);}
+
+rotate(angulo); scaleX(n); skewX(a);
+matrix(scaleX(), scaleY(), skewX(), skewY(), translateX(), translateY() );
+
+exemplo com javascript mudando style tranformação
+
+transition-dalay
+transition-duration
+transition-property
+transition-timing-function
+
+div {
+  width: 100px; height: 100px;
+  transition: width 2s;
+}
+#div1 {transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out}
+div:hover {width: 300px}
+
+achei melhor o ease-in-out
+
+https://color.adobe.com/create/color-wheel
+cor + cor complementar, pois combinam
+ideal é usar uma cor mais uma segundária
+
+Elementos estruturais semânticos
+topo (header), menu (nav), conteúdo, banner, footer
+
+<section> é apropriado apenas se o conteúdo do elemento for listado explicitamente na estrutura de tópicos do documento
+<article>: uma postagem em um blog ou um comentário. Um independe do outro.
+<div> como um elemento de último recurso, quando nenhum outro elemento for adequado.
+
+* {box-sizing: border-box;}
+
+.box { background: #FFF; border: 4px solid rgb(16, 1, 1);
+border-color: #000; color: #000;}
+.container {
+ display: grid;
+ grid-template-columns: 100px 50px 80px 200px;
+ grid-template-rows:80px 100px 100px;
+ gap:8px;}
+HTML:
+<div class="container">
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+<div class="box">4</div>
+<div class="box">5</div>
+<div class="box">6</div>
+<div class="box">7</div>
+<div class="box">8</div>
+<div class="box">9</div>
+</div>
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 50px 80px 200px;
+  grid-template-rows: 80px 100px 100px;
+  gap: 10px;
+  // gap: 0 8px; /* espaçamento somente para colunas */ 
+}
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-start: 4;
+}
+<div class="container">
+
+.container {
+display: grid;
+grid-template-columns: repeat(6, 100px);
+grid-template-rows: repeat(4, 60px);
+grid-gap: 5px;
+}
+.box1 {
+grid-column: 2 / span 4;}//começa na coluna 2 e irá ocupar 4 células.
+.box2 { grid-row: 3 / span 2;} //começa na linha 3 e irá ocupar 2 células.
+.box3 { 
+  grid-column: 3 / span 4; //começa na coluna 3 e irá ocupar 4  células.
+  grid-row: 3 / span 2; //começa na linha 3 e irá ocupar 2 células.
+}
+
+<div class="container">
+ <header class="topo">Topo</header>
+ <nav class="menu">Menu</nav>
+ <main class="principal">Principal</main>
+ <aside class="esquerda">aside esquerdo</aside>
+ <aside class="direita">aside direito</aside>
+ <footer class="rodape">Rodapé</footer>
+</div>
+No CSS
+.container {
+ display: grid;
+ grid-template-rows: 60px 40px 200px 60px;
+ grid-template-areas:
+ "topo topo topo"
+ "menu menu menu"
+ "esquerda principal direita"
+ "rodape rodape rodape";
+ grid-gap: 5px 10px;
+}
+.topo {grid-area: topo;}
+.menu {grid-area: menu;}
+.principal {grid-area: principal;}
+.esquerda {grid-area: esquerda;}
+.direita {grid-area: direita;}
+.rodape {grid-area: rodape;}
+
+4vh (4% da altura da viewport)
+
+
+Flexbox: layout em linha OU coluna
+
+.container { display: flex; }
+flex-direction: row|column|column-reverse;
+justify-content: flex-start | flex-end | flex-center | space-between | space-around;
+flex-wrap: wrap; /* o valor padrão é nowrap */
+
+@media screen and (min-height: 600px) and (max-height: 768px)
+{....}
+
+@media screen and (min-width: 480px) {
+  body {
+    bac...
+  }
+}
+
+width: largura da área de saída.
+device-width: largura física da área de renderização do dispositivo
+
+width e height são funcionalidades dinâmicas e device-width e device-height são
+funcionalidades fixas, pois tratam de medidas de dispositivos físicos.
+orientation: os valores possíveis para orientation são landscape e portrait.
+Exemplo:
+@media screen and (orientation: landscape) {....}
+
+resolution: descreve a resolução, densidade de pixel, no dispositivo do usuário.
+Exemplo:
+@media screen and (min-resolution: 300dpi) {...} /*dispositivos
+com resolução maior que 300 pontos por polegadas*/
+
+Ao fazer as declarações em CSS, a primeira que deve ser declarada é para smartphones, e assim para os demais dispositivos, utilizando o breakpoint.
+
+img com tamanho flexível
+<picture>
+<source media="(max-width: 750px)" srcset="imagem1.png">
+<source media="(max-width: 1050px)" srcset="imagem2.png">
+<img src="imagem.png">
+</picture>
+
+< div class =" artdirection" alt ="exemplo " > </ div >
+CSS
+.artdirection {
+max-width: 100%;
+height: 240px;
+border: 5px solid red;
+background-image: url(imagens/ img1. jpg);
+background-position: top;
+}
+@media screen and (min-width: 320px) {
+.artdirection {
+border: 5px solid blue;
+background-image: url(imagens/ img2. jpg);
+height: 525px;
+}
+}
+@media screen and (min-width: 700px) {
+.artdirection {
+border: 5px solid green;
+background-image: url(imagens/img2. jpg);
+height: 750px;
+}
+}
+@media screen and (min-width: 1600px) {
+.artdirection {
+border: 5px solid black;
+background-image: url(imagens/ img3. jpg);
+max-width: 1600px;
+height: 1200px;
+}
+}
+
+
+img {
+display: block;
+margin: 0, auto;
+max-width: 100%;
+}
+
+localStorage.setItem("nome", "João");
+let nome = localStorage.getItem("nome");
+
+substitui o cookie
+
