@@ -494,7 +494,30 @@ Interface-Humano-Computador_133371.txt
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Pre-Calculo_133373.txt
+Pre-Calculo
+
+triângulo
+lados: equilátero, isócele (dois lados iguais), escaleno
+ângulo: agudo (todos < 90), reto, obtuso (um ângulo > 90°)
+
+para ser triângulo, o maior lado tem que ser menor que a soma dos outros dois lados.
+
+usa teorema de pitágoras e o tamanho dos lados para determinar se o triângulo é agudo (<), reto (=) ou obtuso (>)
+
+soma dos ângulos internos de um polígono é (n - 2) * 180°
+
+sistema linear
+metodo substituição
+metodo soma
+sistema possível determinado (multiplicou uma linha por -1 e depois somou) (solução é o ponto onde duas retas se cruzam)
+
+sistema possível indeterminado  (multiplicou uma linha por -1 e depois somou, obteve 0 = 0. Significa que tem mais de um resultado) (retas sobrepostas)
+a + b = 2
+2a + 2b = 4
+
+sistema impossível (obtém 0 = 1, não tem solução) (retas paralelas)
+a + b = 2
+a + b = 3
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
