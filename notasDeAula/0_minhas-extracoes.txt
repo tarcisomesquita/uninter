@@ -113,7 +113,7 @@ concorrência entre programas
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Fundamentos-de-Infraestrutura-da-Tecnologia-da-Informacao_133361.txt
+Fundamentos-de-Infraestrutura-da-Tecnologia-da-Informacao
 
 entrada > sistema > saída
 
@@ -167,7 +167,7 @@ Tipos de sistemas de informação
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Fundamentos-de-Design-de-Sistemas_133362.txt
+Fundamentos-de-Design-de-Sistemas
 
 software tem tempo de vida
 
@@ -206,7 +206,7 @@ Pilares da arquitetura da informação
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Fundamentos-da-Computacao_133363.txt
+Fundamentos-da-Computacao
 
 - Moda
 elementos que aparecem mais vezes
@@ -306,7 +306,7 @@ TERMINAR
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Comunicacao-Empresarial_133367.txt
+Comunicacao-Empresarial
 
 Vygotsky: não se pensa no que vai falar (sequência de palavras), mas no que vai comunicar
 
@@ -350,7 +350,7 @@ Use a impostação vocal, ou seja, a ressonância corporal.
 
  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Fundamentos-de-Sistemas-de-Informacao_133364.txt
+Fundamentos-de-Sistemas-de-Informacao
 
 Desenvolvimento:
 - levantamento do sistema (qual sistema já possui, quais serão as demandas futuras)
